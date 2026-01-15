@@ -91,6 +91,30 @@
             width: 100%;
         }
 
+        .lang-toggle {
+            padding: 0.4rem 0.8rem;
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text);
+            border-radius: 0.4rem;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .lang-toggle:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .lang-toggle span {
+            margin-left: 0.2rem;
+        }
+
         /* Hero Section */
         .hero {
             margin-top: 80px;
@@ -850,12 +874,17 @@
     <nav>
         <div class="nav-container">
             <div class="logo" onclick="navigateTo('home')" style="cursor: pointer;">TB</div>
-            <ul>
+           <ul>
                 <li><a onclick="navigateTo('home')">Accueil</a></li>
                 <li><a onclick="navigateTo('about')">À Propos</a></li>
                 <li><a onclick="navigateTo('projects')">Projets</a></li>
                 <li><a href="https://drive.google.com/uc?export=download&id=1gw_to2ZWTvvnDrpO3qdEvrWFMWLGl6O3" download="BOINET-Thomas_CV_FR.pdf">CV</a></li>
                 <li><a onclick="navigateTo('contact')">Contact</a></li>
+                <li style="margin-left: auto; padding-left: 2.5rem; border-left: 1px solid var(--border);">
+                    <button class="lang-toggle" onclick="toggleLanguage()">
+                        <span id="lang-display">FR</span> <span id="flag">🇫🇷</span>
+                    </button>
+                </li>
             </ul>
         </div>
     </nav>
@@ -1023,10 +1052,10 @@
             </section>
         </div>
 
-        <!-- Projects Page -->
+<!-- Projects Page -->
         <div id="page-projects" class="page">
             <section class="container page-section">
-                <h2><span>📁</span> Mes Projets</h2>
+                <h2><span>📁</span> <span class="text-section-projects">Mes Projets</span></h2>
                 <div class="projects-grid">
                     <!-- Project 1 -->
 <div class="project-card" onclick="navigateTo('project1')">
@@ -1034,14 +1063,14 @@
         <img src="assets/images/projects/rogue-lite/roguelitethumbnail.png" alt="RogueLiteProject" style="width: 100%; height: 100%; object-fit: cover;">
     </div>
     <div class="project-content">
-        <h3>RogueLiteProject</h3>
-        <p>Roguelite avec génération procédurale de salle et des IA</p>
+        <h3><span class="text-project-1-title">RogueLiteProject</span></h3>
+        <p><span class="text-project-1-desc">Roguelite avec génération procédurale de salle et des IA</span></p>
         <div class="project-tags">
             <span class="tag">Unreal Engine 5</span>
             <span class="tag">Blueprint</span>
             <span class="tag">Gameplay</span>
             <span class="tag">IA</span>
-            <span class="tag">Génération Procédurale</span>
+            <span class="tag"><span class="text-tag-procedural">Génération Procédurale</span></span>
         </div>
         <div class="project-links">
             <a href="https://github.com/Cookiecrafty/RogueLiteProject" target="_blank" onclick="event.stopPropagation()">📁 GitHub</a>
@@ -1050,11 +1079,11 @@
 </div>
 
                     <!-- Project 2 -->
-		<div class="project-card" onclick="navigateTo('project2')">
+	<div class="project-card" onclick="navigateTo('project2')">
    		<div class="project-image">⚙️</div>
     		<div class="project-content">
-        	<h3>ImportTool</h3>
-        	<p>Système d'importation et de renommage automatisé des assets via un pipeline optimisé</p>
+        	<h3><span class="text-project-2-title">ImportTool</span></h3>
+        	<p><span class="text-project-2-desc">Système d'importation et de renommage automatisé des assets via un pipeline optimisé</span></p>
         	<div class="project-tags">
             	<span class="tag">Unreal Engine 5</span>
             	<span class="tag">C++</span>
@@ -1063,22 +1092,22 @@
         	</div>
         	<div class="project-links">
             	<a href="https://github.com/Cookiecrafty/ImportTool" target="_blank" onclick="event.stopPropagation()">📁 GitHub</a>
-        		</div>
+        	</div>
     		</div>
 	</div>
 
-                    <!-- Project 3 -->
+                     <!-- Project 3 -->
                     <div class="project-card" onclick="navigateTo('project3')">
                         <div class="project-image">🌐</div>
                         <div class="project-content">
-                            <h3>TwoAgainstTime</h3>
-                            <p>Jeu multijoueur coop en ligne avec chat vocal de proximité</p>
+                            <h3><span class="text-project-3-title">TwoAgainstTime</span></h3>
+                            <p><span class="text-project-3-desc">Jeu multijoueur coop en ligne avec chat vocal de proximité</span></p>
                             <div class="project-tags">
                                 <span class="tag">Unreal Engine 5</span>
-            			<span class="tag">Blueprint</span>
-            			<span class="tag">C++</span>
-            			<span class="tag">Voice Chat</span>
-            			<span class="tag">Multiplayer Online</span>
+            	<span class="tag">Blueprint</span>
+            	<span class="tag">C++</span>
+            	<span class="tag"><span class="text-tag-voice">Voice Chat</span></span>
+            	<span class="tag"><span class="text-tag-multiplayer">Multiplayer Online</span></span>
                             </div>
                             <div class="project-links">
                                 <a href="https://github.com/Cookiecrafty/CoopASG2" target="_blank" onclick="event.stopPropagation()">📁 GitHub</a>
@@ -1109,6 +1138,108 @@
                     </p>
                     <img src="assets/images/projects/rogue-lite/roguelitegifproceduralgeneration.gif" alt="Génération Procédurale" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1rem;">
                 </div>
+		<hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
+
+<h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;">🏗️ Système de Génération de Salle</h3>
+<p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1.5rem;">
+    Au début de chaque partie, une suite de salles est générée. La génération procédurale est gérée par un système de seed, ce qui permet de trouver facilement des bugs si l'on découvre une seed avec un agencement de salle incohérent. À chaque génération de salle, on vérifie à l'aide d'une boîte de collision jaune si la nouvelle salle entre en collision avec une autre salle déjà placée. Si ce n'est pas le cas, on continue la génération. Si une collision est détectée, on supprime la salle et on la place vers une autre sortie disponible.
+</p>
+<img src="assets/images/projects/rogue-lite/imagesalleempty.png" alt="Salle Vide" style="width: 100%; border-radius: 0.4rem; margin-bottom: 2rem;">
+
+<hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
+
+<h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;">🎮 Types de Salles</h3>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;">🚪 Salle de Départ</h4>
+    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+        La salle de départ détermine où commence la génération du donjon et scelle les 3 autres sorties. Chaque sortie disponible est représentée par une flèche verte, comme montré dans l'image ci-dessous.
+    </p>
+    <img src="assets/images/projects/rogue-lite/imagesallestarter.png" alt="Salle de Départ" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;">
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;">🛤️ Couloirs</h4>
+    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+        Entre chaque salle, il y a des couloirs qui servent de zones de passage et de repos pour le joueur, car la majorité des salles contiennent des pièges. Il existe un seul modèle de couloir dans le donjon.
+    </p>
+    <img src="assets/images/projects/rogue-lite/imagecouloir.png" alt="Couloir" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;">
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;">🏛️ Salles Principales</h4>
+    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+        Après chaque couloir, une nouvelle salle avec de nouvelles possibilités de sorties apparaît. Les sorties disponibles sont représentées par des flèches vertes. À chaque génération, le système récupère toutes les sorties disponibles et en choisit une au hasard. Cela permet une génération de donjon imprévisible, pouvant être linéaire ou se disperser dans plusieurs directions. Chaque salle contient une box de collision rouge qui, lorsque le joueur la traverse, ferme les portes et déclenche l'apparition de vagues d'ennemis. Le nombre de vagues et les types d'ennemis sont aléatoires.
+</p>
+    <img src="assets/images/projects/rogue-lite/imagesalle.png" alt="Salle Principale" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;">
+</div>
+</div>
+<hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
+
+<h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;">✨ Salles Spéciales</h3>
+<p style="color: var(--text-light); line-height: 1.8; margin-bottom: 2rem;">
+    À chaque génération de donjon, une salle magasin et une salle de fin apparaissent obligatoirement.
+</p>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;">🏪 Salle Magasin</h4>
+    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+        La salle magasin est un lieu où le joueur peut acheter de nouvelles armes en utilisant l'or collecté. Deux armes sont disponibles à l'achat : un fusil à pompe et un pistolet laser.
+    </p>
+    <img src="assets/images/projects/rogue-lite/imagesalleshop.png" alt="Salle Magasin" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1rem;">
+    <img src="assets/images/projects/rogue-lite/salleshopgif.gif" alt="Salle Magasin Animation" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;">
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;">🚪 Salles de Fin</h4>
+    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1.5rem;">
+        Il existe deux types de salle de fin de donjon :
+    </p>
+    
+    <div style="margin-left: 1rem; margin-bottom: 1.5rem;">
+        <h5 style="color: var(--primary); margin-bottom: 0.8rem; font-size: 1.1rem;">🌀 Salle Portail</h5>
+        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+            La salle portail téléporte le joueur et génère une nouvelle suite de salles, permettant une progression continue du donjon.
+        </p>
+        <img src="assets/images/projects/rogue-lite/imagesalleportail.png" alt="Salle Portail" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;">
+    </div>
+
+    <div style="margin-left: 1rem;">
+        <h5 style="color: var(--primary); margin-bottom: 0.8rem; font-size: 1.1rem;">👹 Salle de Boss</h5>
+        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+            La salle de boss est la dernière salle du donjon et représente le défi final de la partie.
+        </p>
+        <img src="assets/images/projects/rogue-lite/imagesalleboss.png" alt="Salle de Boss" style="width: 100%; border-radius: 0.4rem;">
+    </div>
+</div>
+<hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
+
+<h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;">🔫 Les Différentes Armes du Jeu</h3>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;">🔩 Mitraillette</h4>
+    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+        La mitraillette est l'arme de base du joueur, permettant de tirer en rafale continue.
+    </p>
+    <video src="assets/images/projects/rogue-lite/mitraillette.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;"></video>
+</div>
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;">💥 Fusil à Pompe</h4>
+    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+        Le fusil à pompe tire une salve de 5 balles à chaque tir, mais avec une cadence de tir plus lente. Il peut être acheté dans le magasin pour 50 or, l'or étant obtenu en tuant des ennemis.
+    </p>
+    <img src="assets/images/projects/rogue-lite/fusilapompegif.gif" alt="Fusil à Pompe" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;">
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;">⚡ Pistolet Laser</h4>
+    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+        Le pistolet laser tue tout ce qui se trouve sur sa trajectoire et traverse les ennemis, permettant de tuer plusieurs adversaires en un seul tir. Il a un délai de tir plus long et coûte 100 or dans le magasin. Cependant, cette arme ne peut être débloquée que grâce aux gemmes, une monnaie premium obtenue en accomplissant le lobby du jeu. Les gemmes peuvent uniquement être gagnées en terminant une partie.
+    </p>
+    <img src="assets/images/projects/rogue-lite/pistoletlasergif.gif" alt="Pistolet Laser" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1rem;">
+    <img src="assets/images/projects/rogue-lite/pistoletlasercraftgif.gif" alt="Craft Pistolet Laser" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;">
+</div>
+
 
                 <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
 
@@ -1250,125 +1381,269 @@
         <p>&copy; 2026 Thomas Boinet</p>
     </footer>
 
-    <script>
-        let currentPage = 'home';
+       <script>
+    const translations = {
+        fr: {
+            "text-home": "Accueil",
+            "text-about": "À Propos",
+            "text-projects": "Projets",
+            "text-cv": "CV",
+            "text-contact": "Contact",
+            "text-subtitle-home": "Gameplay Programmer",
+            "text-description-home": "Spécialisé en systèmes de gameplay avancés, mécaniques interactives et architecture réseau. Expertise en Unreal Engine 5 et Unity avec focus sur C++ et performance.",
+            "text-cta-contact": "Me Contacter",
+            "text-cta-projects": "Voir mes projets",
+            "text-section-about": "À Propos",
+            "text-job-title": "Game Developer",
+            "text-bio-p1": "Salut ! Je suis Thomas, Game Developer junior spécialisé en programmation et conception de jeux vidéo.",
+            "text-bio-p2": "Je suis un Game Developer capable de créer des jeux vidéo complets sur Unreal Engine, que ce soit du solo, du multiplayer local ou en ligne, ou encore créer un jeu mobile.",
+            "text-bio-p3": "Avec un parcours en Game Developer, j'adore créer des mécaniques de gameplay innovantes et engageantes, car j'adore donner vie aux créations des artistes et transformer leurs visions en expériences de jeu captivantes.",
+            "text-bio-p4": "Mon objectif est de développer des systèmes robustes et performants qui permettent aux joueurs de vivre des aventures inoubliables, tout en travaillant en étroite collaboration avec les équipes créatives.",
+            "text-section-skills": "Compétences",
+            "text-skill-engine": "🎮 Moteur de Jeu",
+            "text-skill-language": "📝 Language de Programmation",
+            "text-skill-storage": "💾 Stockage",
+            "text-skill-art": "🎨 Logiciel Artistique",
+            "text-skill-sound": "🎵 Logiciel de Son",
+            "text-section-education": "Formation",
+            "text-degree-1": "Bachelor Développeur Jeux Vidéo",
+            "text-degree-1-spec": "Spécialisation : Programmation",
+            "text-degree-2": "BAC avec mention",
+            "text-degree-2-spec": "Spécialisation Maths/Physique",
+            "text-section-gamejam": "Game Jam",
+            "text-section-projects": "Mes Projets",
+            "text-project-1-title": "RogueLiteProject",
+            "text-project-1-desc": "Roguelite avec génération procédurale de salle et des IA",
+            "text-tag-procedural": "Génération Procédurale",
+            "text-project-2-title": "ImportTool",
+            "text-project-2-desc": "Système d'importation et de renommage automatisé des assets via un pipeline optimisé",
+            "text-project-3-title": "TwoAgainstTime",
+            "text-project-3-desc": "Jeu multijoueur coop en ligne avec chat vocal de proximité",
+            "text-tag-voice": "Voice Chat",
+            "text-tag-multiplayer": "Multiplayer Online",
+            "text-section-contact": "Contact",
+            "text-contact-subtitle": "Me contacter",
+            "text-contact-message": "Vous avez un projet en tête ? N'hésitez pas à me contacter !",
+            "text-back": "Retour aux Projets",
+            "text-project-1-detail": "RogueLiteProject",
+            "text-accomplished": "Ce que j'ai réalisé",
+            "text-procedural-title": "Génération Procédurale de Salle",
+            "text-procedural-desc": "Système de génération procédurale avancé permettant la création automatique et aléatoire de niveaux uniques. Chaque salle est générée en fonction de paramètres définis, assurant une expérience de jeu réplayable avec une grande variété de configurations de niveaux.",
+            "text-detailed-desc": "Description Détaillée",
+            "text-project-1-full-desc": "Roguelite avec génération procédurale de salle et des IA. Ce projet explore les systèmes de génération procédurale avancés et les comportements d'IA sophistiqués pour créer une expérience de jeu réplayable et engageante.",
+            "text-footer": "Tous droits réservés."
+        },
+        en: {
+            "text-home": "Home",
+            "text-about": "About",
+            "text-projects": "Projects",
+            "text-cv": "Resume",
+            "text-contact": "Contact",
+            "text-subtitle-home": "Gameplay Programmer",
+            "text-description-home": "Specialized in advanced gameplay systems, interactive mechanics and network architecture. Expert in Unreal Engine 5 and Unity with focus on C++ and performance.",
+            "text-cta-contact": "Contact Me",
+            "text-cta-projects": "View my projects",
+            "text-section-about": "About",
+            "text-job-title": "Game Developer",
+            "text-bio-p1": "Hi! I'm Thomas, a junior Game Developer specialized in programming and video game design.",
+            "text-bio-p2": "I'm a Game Developer capable of creating complete video games in Unreal Engine, whether solo, local multiplayer or online, or even create a mobile game.",
+            "text-bio-p3": "With a background in Game Development, I love creating innovative and engaging gameplay mechanics, because I love bringing artists' creations to life and transforming their visions into captivating game experiences.",
+            "text-bio-p4": "My goal is to develop robust and performant systems that allow players to experience unforgettable adventures, while working closely with creative teams.",
+            "text-section-skills": "Skills",
+            "text-skill-engine": "🎮 Game Engine",
+            "text-skill-language": "📝 Programming Language",
+            "text-skill-storage": "💾 Storage",
+            "text-skill-art": "🎨 Art Software",
+            "text-skill-sound": "🎵 Sound Software",
+            "text-section-education": "Education",
+            "text-degree-1": "Bachelor Game Developer",
+            "text-degree-1-spec": "Specialization: Programming",
+            "text-degree-2": "High School Diploma with honors",
+            "text-degree-2-spec": "Math/Physics Specialization",
+            "text-section-gamejam": "Game Jam",
+            "text-section-projects": "My Projects",
+            "text-project-1-title": "RogueLiteProject",
+            "text-project-1-desc": "Roguelite with procedural room generation and AI",
+            "text-tag-procedural": "Procedural Generation",
+            "text-project-2-title": "ImportTool",
+            "text-project-2-desc": "Automated asset import and rename system via optimized pipeline",
+            "text-project-3-title": "TwoAgainstTime",
+            "text-project-3-desc": "Cooperative online multiplayer game with proximity voice chat",
+            "text-tag-voice": "Voice Chat",
+            "text-tag-multiplayer": "Multiplayer Online",
+            "text-section-contact": "Contact",
+            "text-contact-subtitle": "Get in touch",
+            "text-contact-message": "Have a project in mind? Feel free to contact me!",
+            "text-back": "Back to Projects",
+            "text-project-1-detail": "RogueLiteProject",
+            "text-accomplished": "What I've accomplished",
+            "text-procedural-title": "Procedural Room Generation",
+            "text-procedural-desc": "Advanced procedural generation system allowing automatic and random creation of unique levels. Each room is generated based on defined parameters, ensuring a replayable gaming experience with great variety of level configurations.",
+            "text-detailed-desc": "Detailed Description",
+            "text-project-1-full-desc": "Roguelite with procedural room generation and AI. This project explores advanced procedural generation systems and sophisticated AI behaviors to create a replayable and engaging gaming experience.",
+            "text-footer": "All rights reserved."
+        }
+    };
 
-        function navigateTo(page) {
-            // Hide current page
-            document.getElementById(`page-${currentPage}`).classList.remove('active');
-            
-            // Show new page
-            document.getElementById(`page-${page}`).classList.add('active');
-            currentPage = page;
-            
-            // Scroll to top
-            window.scrollTo(0, 0);
+    let currentPage = 'home';
+
+    function initLanguage() {
+        const savedLang = localStorage.getItem('language') || 'fr';
+        setLanguage(savedLang);
+    }
+
+    function setLanguage(lang) {
+        localStorage.setItem('language', lang);
+        document.documentElement.lang = lang;
+        
+        const langDisplay = document.getElementById('lang-display');
+        const flag = document.getElementById('flag');
+        
+        if (langDisplay && flag) {
+            if (lang === 'fr') {
+                langDisplay.textContent = 'FR';
+                flag.textContent = '🇫🇷';
+            } else {
+                langDisplay.textContent = 'EN';
+                flag.textContent = '🇬🇧';
+            }
         }
 
-        function openModal(modalId) {
-            document.getElementById(modalId).classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeModal(modalId) {
-            document.getElementById(modalId).classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-
-        document.querySelectorAll('.modal').forEach(modal => {
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) {
-                    closeModal(modal.id);
+        // Update all text elements
+        const elements = document.querySelectorAll('[class*="text-"]');
+        elements.forEach(element => {
+            const classes = element.className.split(' ');
+            classes.forEach(className => {
+                if (className.startsWith('text-') && translations[lang][className]) {
+                    element.textContent = translations[lang][className];
                 }
             });
         });
+    }
 
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                document.querySelectorAll('.modal.active').forEach(modal => {
-                    closeModal(modal.id);
-                });
+    function toggleLanguage() {
+        const currentLang = localStorage.getItem('language') || 'fr';
+        const newLang = currentLang === 'fr' ? 'en' : 'fr';
+        setLanguage(newLang);
+    }
+
+    function navigateTo(page) {
+        // Hide current page
+        document.getElementById(`page-${currentPage}`).classList.remove('active');
+        
+        // Show new page
+        document.getElementById(`page-${page}`).classList.add('active');
+        currentPage = page;
+        
+        // Scroll to top
+        window.scrollTo(0, 0);
+    }
+
+    function openModal(modalId) {
+        document.getElementById(modalId).classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+
+    document.querySelectorAll('.modal').forEach(modal => {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal(modal.id);
             }
         });
+    });
 
-        // Character counter for message
-        const messageInput = document.getElementById('message');
-        if (messageInput) {
-            messageInput.addEventListener('input', (e) => {
-                const count = e.target.value.length;
-                const maxCount = 1000;
-                document.getElementById('char-count').textContent = Math.min(count, maxCount);
-                if (count > maxCount) e.target.value = e.target.value.substring(0, maxCount);
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            document.querySelectorAll('.modal.active').forEach(modal => {
+                closeModal(modal.id);
             });
         }
+    });
 
-        const contactForm = document.getElementById('contact-form');
-        if (contactForm) {
-            contactForm.addEventListener('submit', async (e) => {
-                e.preventDefault();
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const subject = document.getElementById('subject').value || 'Sans sujet';
-                const message = document.getElementById('message').value;
-                const button = contactForm.querySelector('.btn-submit');
-                const originalText = button.textContent;
-                button.disabled = true;
-                button.textContent = 'Envoi en cours...';
+    // Character counter for message
+    const messageInput = document.getElementById('message');
+    if (messageInput) {
+        messageInput.addEventListener('input', (e) => {
+            const count = e.target.value.length;
+            const maxCount = 1000;
+            document.getElementById('char-count').textContent = Math.min(count, maxCount);
+            if (count > maxCount) e.target.value = e.target.value.substring(0, maxCount);
+        });
+    }
 
-                try {
-                    const formData = new FormData();
-                    formData.append('name', name);
-                    formData.append('_replyto', email);
-                    formData.append('_subject', `Nouveau message de ${name}: ${subject}`);
-                    formData.append('message', message);
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value || 'Sans sujet';
+            const message = document.getElementById('message').value;
+            const button = contactForm.querySelector('.btn-submit');
+            const originalText = button.textContent;
+            button.disabled = true;
+            button.textContent = 'Envoi en cours...';
 
-                    const response = await fetch('https://formspree.io/f/xlggdbzr', {
-                        method: 'POST',
-                        body: formData,
-                        headers: { 'Accept': 'application/json' }
-                    });
+            try {
+                const formData = new FormData();
+                formData.append('name', name);
+                formData.append('_replyto', email);
+                formData.append('_subject', `Nouveau message de ${name}: ${subject}`);
+                formData.append('message', message);
 
-                    if (response.ok) {
-                        button.textContent = 'Message envoyé avec succès !';
-                        button.style.background = 'rgba(46, 204, 113, 0.8)';
-                        contactForm.reset();
-                        document.getElementById('char-count').textContent = '0';
-                        setTimeout(() => {
-                            button.disabled = false;
-                            button.textContent = originalText;
-                            button.style.background = '';
-                        }, 3000);
-                    } else {
-                        throw new Error(`Erreur serveur: ${response.status}`);
-                    }
-                } catch (error) {
-                    console.error('Erreur formulaire:', error);
-                    button.textContent = 'Erreur lors de l\'envoi';
-                    button.style.background = 'rgba(255, 84, 89, 0.8)';
+                const response = await fetch('https://formspree.io/f/xlggdbzr', {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    button.textContent = 'Message envoyé avec succès !';
+                    button.style.background = 'rgba(46, 204, 113, 0.8)';
+                    contactForm.reset();
+                    document.getElementById('char-count').textContent = '0';
                     setTimeout(() => {
                         button.disabled = false;
                         button.textContent = originalText;
                         button.style.background = '';
                     }, 3000);
+                } else {
+                    throw new Error(`Erreur serveur: ${response.status}`);
                 }
-            });
-        }
-
-        // Copy email to clipboard
-        function copyEmail() {
-            const email = 'thomas.boinet75@gmail.com';
-            navigator.clipboard.writeText(email).then(() => {
-                const btn = event.target;
-                const originalText = btn.textContent;
-                btn.textContent = 'Email copié !';
+            } catch (error) {
+                console.error('Erreur formulaire:', error);
+                button.textContent = 'Erreur lors de l\'envoi';
+                button.style.background = 'rgba(255, 84, 89, 0.8)';
                 setTimeout(() => {
-                    btn.textContent = originalText;
-                }, 2000);
-            });
-        }
+                    button.disabled = false;
+                    button.textContent = originalText;
+                    button.style.background = '';
+                }, 3000);
+            }
+        });
+    }
 
-        // Initialize - show home page
-        document.getElementById('page-home').classList.add('active');
-    </script>
+    // Copy email to clipboard
+    function copyEmail() {
+        const email = 'thomas.boinet75@gmail.com';
+        navigator.clipboard.writeText(email).then(() => {
+            const btn = event.target;
+            const originalText = btn.textContent;
+            btn.textContent = 'Email copié !';
+            setTimeout(() => {
+                btn.textContent = originalText;
+            }, 2000);
+        });
+    }
+
+    // Initialize
+    window.addEventListener('DOMContentLoaded', initLanguage);
+    document.getElementById('page-home').classList.add('active');
+</script>
 </body>
 </html>
