@@ -870,192 +870,193 @@
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <div class="logo" onclick="navigateTo('home')" style="cursor: pointer;">TB</div>
-           <ul>
-                <li><a onclick="navigateTo('home')">Accueil</a></li>
-                <li><a onclick="navigateTo('about')">À Propos</a></li>
-                <li><a onclick="navigateTo('projects')">Projets</a></li>
-                <li><a href="https://drive.google.com/uc?export=download&id=1gw_to2ZWTvvnDrpO3qdEvrWFMWLGl6O3" download="BOINET-Thomas_CV_FR.pdf">CV</a></li>
-                <li><a onclick="navigateTo('contact')">Contact</a></li>
-                <li style="margin-left: auto; padding-left: 2.5rem; border-left: 1px solid var(--border);">
-                    <button class="lang-toggle" onclick="toggleLanguage()">
-                        <span id="lang-display">FR</span> <span id="flag">🇫🇷</span>
-                    </button>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<!-- Navigation -->
+<nav>
+    <div class="nav-container">
+        <div class="logo" onclick="navigateTo('home')" style="cursor: pointer;">TB</div>
+       <ul>
+            <li><a onclick="navigateTo('home')"><span class="text-nav-home">Accueil</span></a></li>
+            <li><a onclick="navigateTo('about')"><span class="text-nav-about">À Propos</span></a></li>
+            <li><a onclick="navigateTo('projects')"><span class="text-nav-projects">Projets</span></a></li>
+            <li><a href="https://drive.google.com/uc?export=download&id=1gw_to2ZWTvvnDrpO3qdEvrWFMWLGl6O3" download="BOINET-Thomas_CV_FR.pdf"><span class="text-nav-cv">CV</span></a></li>
+            <li><a onclick="navigateTo('contact')"><span class="text-nav-contact">Contact</span></a></li>
+            <li style="margin-left: auto; padding-left: 2.5rem; border-left: 1px solid var(--border);">
+                <button class="lang-toggle" onclick="toggleLanguage()">
+                    <span id="lang-display">FR</span> <span id="flag">🇫🇷</span>
+                </button>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-    <!-- Pages Container -->
-    <div id="pages-container">
-        <!-- Home Page -->
-        <div id="page-home" class="page active">
-            <section class="hero">
-                <div class="hero-content">
-                    <h1 class="hero-title">
-                        <span class="name">Thomas</span> Boinet
-                    </h1>
-                    <h2 class="hero-subtitle">Gameplay Programmer</h2>
-                    <p class="hero-description">
-                        Spécialisé en systèmes de gameplay avancés, mécaniques interactives et architecture réseau. 
-                        Expertise en Unreal Engine 5 et Unity avec focus sur C++ et performance.
-                    </p>
-                    <div class="cta-buttons">
-                        <button class="btn btn-primary" onclick="navigateTo('contact')">Me Contacter</button>
-                        <a onclick="navigateTo('projects')" class="btn btn-secondary" style="cursor: pointer;">Voir mes projets</a>
-                    </div>
+<!-- Pages Container -->
+<div id="pages-container">
+    <!-- Home Page -->
+    <div id="page-home" class="page active">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="name">Thomas</span> Boinet
+                </h1>
+                <h2 class="hero-subtitle"><span class="text-subtitle-home">Gameplay Programmer</span></h2>
+                <p class="hero-description">
+                    <span class="text-description-home">Spécialisé en systèmes de gameplay avancés, mécaniques interactives et architecture réseau. Expertise en Unreal Engine 5 et Unity avec focus sur C++ et performance.</span>
+                </p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="navigateTo('contact')"><span class="text-cta-contact">Me Contacter</span></button>
+                    <a onclick="navigateTo('projects')" class="btn btn-secondary" style="cursor: pointer;"><span class="text-cta-projects">Voir mes projets</span></a>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+    </div>
 
-        <!-- About Page -->
-        <div id="page-about" class="page">
-            <section class="container page-section">
-                <h2><span>👤</span> À Propos</h2>
-                
-                <div style="max-width: 800px; margin: 0 auto 4rem;">
-                    <div style="text-align: center; margin-bottom: 2.5rem;">
-                       <div style="width: 200px; height: 200px; border-radius: 50%; margin: 0 auto 1.5rem; overflow: hidden;">
+<!-- About Page -->
+<div id="page-about" class="page">
+    <section class="container page-section">
+        <h2><span class="text-section-about">À Propos</span></h2>
+        
+        <div style="max-width: 800px; margin: 0 auto 4rem;">
+            <div style="text-align: center; margin-bottom: 2.5rem;">
+               <div style="width: 200px; height: 200px; border-radius: 50%; margin: 0 auto 1.5rem; overflow: hidden;">
     <img src="assets/images/thomasboinetprofilepicture.png" alt="Thomas Boinet" style="width: 100%; height: 100%; object-fit: cover;">
 </div>
-                        <h3 style="font-size: 1.8rem; color: var(--primary); margin-bottom: 0.5rem;">Thomas Boinet</h3>
-                        <p style="color: var(--text-light); font-size: 1.1rem;">Game Developer</p>
-                    </div>
+                <h3 style="font-size: 1.8rem; color: var(--primary); margin-bottom: 0.5rem;">Thomas Boinet</h3>
+                <p style="color: var(--text-light); font-size: 1.1rem;"><span class="text-job-title">Game Developer</span></p>
+            </div>
 
-                    <p style="color: var(--text-light); font-size: 1rem; line-height: 1.8; text-align: center; margin-bottom: 1.5rem;">
-                        Salut ! Je suis Thomas, Game Developer junior spécialisé en programmation et conception de jeux vidéo.
-                    </p>
+            <p style="color: var(--text-light); font-size: 1rem; line-height: 1.8; text-align: center; margin-bottom: 1.5rem;">
+                <span class="text-bio-p1">Salut ! Je suis Thomas, Game Developer junior spécialisé en programmation et conception de jeux vidéo.</span>
+            </p>
 
-                    <p style="color: var(--text-light); font-size: 1rem; line-height: 1.8; text-align: center; margin-bottom: 1.5rem;">
-                        Je suis un Game Developer capable de créer des jeux vidéo complets sur Unreal Engine, que ce soit du solo, du multiplayer local ou en ligne, ou encore créer un jeu mobile.
-                    </p>
+            <p style="color: var(--text-light); font-size: 1rem; line-height: 1.8; text-align: center; margin-bottom: 1.5rem;">
+                <span class="text-bio-p2">Je suis un Game Developer capable de créer des jeux vidéo complets sur Unreal Engine, que ce soit du solo, du multiplayer local ou en ligne, ou encore créer un jeu mobile.</span>
+            </p>
 
-                    <p style="color: var(--text-light); font-size: 1rem; line-height: 1.8; text-align: center; margin-bottom: 1.5rem;">
-                        Avec un parcours en Game Developer, j'adore créer des mécaniques de gameplay innovantes et engageantes, car j'adore donner vie aux créations des artistes et transformer leurs visions en expériences de jeu captivantes.
-                    </p>
+            <p style="color: var(--text-light); font-size: 1rem; line-height: 1.8; text-align: center; margin-bottom: 1.5rem;">
+                <span class="text-bio-p3">Avec un parcours en Game Developer, j'adore créer des mécaniques de gameplay innovantes et engageantes, car j'adore donner vie aux créations des artistes et transformer leurs visions en expériences de jeu captivantes.</span>
+            </p>
 
-                    <p style="color: var(--text-light); font-size: 1rem; line-height: 1.8; text-align: center;">
-                        Mon objectif est de développer des systèmes robustes et performants qui permettent aux joueurs de vivre des aventures inoubliables, tout en travaillant en étroite collaboration avec les équipes créatives.
-                    </p>
-                </div>
-
-                <!-- Compétences Section -->
-                <h2 style="margin-top: 4rem;"><span>💻</span> Compétences</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>🎮 Moteur de Jeu</h3>
-                        <div class="skill-list">
-                            <span class="skill-item">Unreal Engine 4 &amp; 5</span>
-                            <span class="skill-item">Unity</span>
-                            <span class="skill-item">Ren'Py</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3>📝 Language de Programmation</h3>
-                        <div class="skill-list">
-                            <span class="skill-item">C++</span>
-                            <span class="skill-item">Blueprint</span>
-                            <span class="skill-item">C#</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3>💾 Stockage</h3>
-                        <div class="skill-list">
-                            <span class="skill-item">Github</span>
-                            <span class="skill-item">Perforce</span>
-                            <span class="skill-item">TortoiseSVN</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3>🎨 Logiciel Artistique</h3>
-                        <div class="skill-list">
-                            <span class="skill-item">Maya</span>
-                            <span class="skill-item">Blender</span>
-                            <span class="skill-item">Houdini</span>
-                            <span class="skill-item">Photoshop</span>
-                            <span class="skill-item">Adobe Illustrator</span>
-                            <span class="skill-item">Adobe Substance 3D Painter</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3>🎵 Logiciel de Son</h3>
-                        <div class="skill-list">
-                            <span class="skill-item">Wwise</span>
-                            <span class="skill-item">Reaper</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Formation Section -->
-                <h2 style="margin-top: 4rem;"><span>🎓</span> Formation</h2>
-                <div class="cv-container">
-                    <div class="cv-item">
-                        <div class="cv-header">
-                            <div>
-                                <h3>Bachelor Développeur Jeux Vidéo</h3>
-                                <p class="cv-subtitle">STUDIO MERCIER – Béziers</p>
-                                <p class="cv-description">Spécialisation : Programmation</p>
-                            </div>
-                            <span class="cv-date">2023</span>
-                        </div>
-                    </div>
-
-                    <div class="cv-item">
-                        <div class="cv-header">
-                            <div>
-                                <h3>BAC avec mention</h3>
-                                <p class="cv-subtitle">École Victor Hugo – Colomiers</p>
-                                <p class="cv-description">Spécialisation Maths/Physique</p>
-                            </div>
-                            <span class="cv-date">2023</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Game Jam Section -->
-                <h2 style="margin-top: 4rem;"><span>🎮</span> Game Jam</h2>
-                <div class="cv-container">
-                    <div class="cv-item">
-                        <div class="cv-header">
-                            <div>
-                                <h3>Global Game Jam</h3>
-                                <p class="cv-description">2024, 2025</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cv-item">
-                        <div class="cv-header">
-                            <div>
-                                <h3>Studio M Game Jam</h3>
-                                <p class="cv-description">2024, 2025</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cv-item" style="border-bottom: none; margin-bottom: 0; padding-bottom: 0;">
-                        <div class="cv-header">
-                            <div>
-                                <h3>GMTK Game Jam</h3>
-                                <p class="cv-description">2025</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <p style="color: var(--text-light); font-size: 1rem; line-height: 1.8; text-align: center;">
+                <span class="text-bio-p4">Mon objectif est de développer des systèmes robustes et performants qui permettent aux joueurs de vivre des aventures inoubliables, tout en travaillant en étroite collaboration avec les équipes créatives.</span>
+            </p>
         </div>
+
+        <!-- Compétences Section -->
+        <h2 style="margin-top: 4rem;"><span class="text-section-skills">Compétences</span></h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><span class="text-skill-engine">Moteur de Jeu</span></h3>
+                <div class="skill-list">
+                    <span class="skill-item">Unreal Engine 4 &amp; 5</span>
+                    <span class="skill-item">Unity</span>
+                    <span class="skill-item">Ren'Py</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><span class="text-skill-language">Language de Programmation</span></h3>
+                <div class="skill-list">
+                    <span class="skill-item">C++</span>
+                    <span class="skill-item">Blueprint</span>
+                    <span class="skill-item">C#</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><span class="text-skill-storage">Stockage</span></h3>
+                <div class="skill-list">
+                    <span class="skill-item">Github</span>
+                    <span class="skill-item">Perforce</span>
+                    <span class="skill-item">TortoiseSVN</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><span class="text-skill-art">Logiciel Artistique</span></h3>
+                <div class="skill-list">
+                    <span class="skill-item">Maya</span>
+                    <span class="skill-item">Blender</span>
+                    <span class="skill-item">Houdini</span>
+                    <span class="skill-item">Photoshop</span>
+                    <span class="skill-item">Adobe Illustrator</span>
+                    <span class="skill-item">Adobe Substance 3D Painter</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><span class="text-skill-sound">Logiciel de Son</span></h3>
+                <div class="skill-list">
+                    <span class="skill-item">Wwise</span>
+                    <span class="skill-item">Reaper</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formation Section -->
+        <h2 style="margin-top: 4rem;"><span class="text-section-education">Formation</span></h2>
+        <div class="cv-container">
+            <div class="cv-item">
+                <div class="cv-header">
+                    <div>
+                        <h3><span class="text-degree-1">Bachelor Développeur Jeux Vidéo</span></h3>
+                        <p class="cv-subtitle">STUDIO MERCIER – Béziers</p>
+                        <p class="cv-description"><span class="text-degree-1-spec">Spécialisation : Programmation</span></p>
+                    </div>
+                    <span class="cv-date">2023</span>
+                </div>
+            </div>
+
+            <div class="cv-item">
+                <div class="cv-header">
+                    <div>
+                        <h3><span class="text-degree-2">BAC avec mention</span></h3>
+                        <p class="cv-subtitle">École Victor Hugo – Colomiers</p>
+                        <p class="cv-description"><span class="text-degree-2-spec">Spécialisation Maths/Physique</span></p>
+                    </div>
+                    <span class="cv-date">2023</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Jam Section -->
+        <h2 style="margin-top: 4rem;"><span class="text-section-gamejam">Game Jam</span></h2>
+        <div class="cv-container">
+            <div class="cv-item">
+                <div class="cv-header">
+                    <div>
+                        <h3>Global Game Jam</h3>
+                        <p class="cv-description">2024, 2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv-item">
+                <div class="cv-header">
+                    <div>
+                        <h3>Studio M Game Jam</h3>
+                        <p class="cv-description">2024, 2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv-item" style="border-bottom: none; margin-bottom: 0; padding-bottom: 0;">
+                <div class="cv-header">
+                    <div>
+                        <h3>GMTK Game Jam</h3>
+                        <p class="cv-description">2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
 
 <!-- Projects Page -->
         <div id="page-projects" class="page">
             <section class="container page-section">
-                <h2><span>📁</span> <span class="text-section-projects">Mes Projets</span></h2>
+                <h2></span> <span class="text-section-projects">Mes Projets</span></h2>
                 <div class="projects-grid">
                     <!-- Project 1 -->
 <div class="project-card" onclick="navigateTo('project1')">
@@ -1073,7 +1074,7 @@
             <span class="tag"><span class="text-tag-procedural">Génération Procédurale</span></span>
         </div>
         <div class="project-links">
-            <a href="https://github.com/Cookiecrafty/RogueLiteProject" target="_blank" onclick="event.stopPropagation()">📁 GitHub</a>
+            <a href="https://github.com/Cookiecrafty/RogueLiteProject" target="_blank" onclick="event.stopPropagation()">GitHub</a>
         </div>
     </div>
 </div>
@@ -1091,7 +1092,7 @@
             	<span class="tag">Tool</span>
         	</div>
         	<div class="project-links">
-            	<a href="https://github.com/Cookiecrafty/ImportTool" target="_blank" onclick="event.stopPropagation()">📁 GitHub</a>
+            	<a href="https://github.com/Cookiecrafty/ImportTool" target="_blank" onclick="event.stopPropagation()">GitHub</a>
         	</div>
     		</div>
 	</div>
@@ -1110,7 +1111,7 @@
             	<span class="tag"><span class="text-tag-multiplayer">Multiplayer Online</span></span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/Cookiecrafty/CoopASG2" target="_blank" onclick="event.stopPropagation()">📁 GitHub</a>
+                                <a href="https://github.com/Cookiecrafty/CoopASG2" target="_blank" onclick="event.stopPropagation()">GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -1121,258 +1122,334 @@
 <!-- Project 1 Detail Page -->
 <div id="page-project1" class="page">
     <section class="container page-section">
-        <button class="btn btn-secondary" onclick="navigateTo('projects')" style="margin-bottom: 2rem;">← Retour aux Projets</button>
-        <h2><span>📁</span> RogueLiteProject</h2>
+        <button class="btn btn-secondary" onclick="navigateTo('projects')" style="margin-bottom: 2rem;">← <span class="text-back-to-projects">Retour aux Projets</span></button>
+        <h2><span class="text-roguelite-title">RogueLiteProject</span></h2>
         <div style="max-width: 900px; margin: 0 auto;">
             <div class="project-image" style="height: 400px; margin-bottom: 2rem; border-radius: 0.6rem;">
                 <img src="assets/images/projects/rogue-lite/roguelitethumbnail.png" alt="RogueLiteProject" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.6rem;">
             </div>
             <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 0.6rem; padding: 2rem; margin-bottom: 2rem;">
-                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;">Ce que j'ai réalisé</h3>
-                
-                <!-- Génération Procédurale -->
-                <div style="margin-bottom: 2rem;">
-                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;">🔄 Génération Procédurale de Salle</h4>
-                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-                        Système de génération procédurale avancé permettant la création automatique et aléatoire de niveaux uniques. Chaque salle est générée en fonction de paramètres définis, assurant une expérience de jeu réplayable avec une grande variété de configurations de niveaux.
-                    </p>
-                    <img src="assets/images/projects/rogue-lite/roguelitegifproceduralgeneration.gif" alt="Génération Procédurale" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1rem;">
-                </div>
-		<hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
-
-<h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;">🏗️ Système de Génération de Salle</h3>
-<p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1.5rem;">
-    Au début de chaque partie, une suite de salles est générée. La génération procédurale est gérée par un système de seed, ce qui permet de trouver facilement des bugs si l'on découvre une seed avec un agencement de salle incohérent. À chaque génération de salle, on vérifie à l'aide d'une boîte de collision jaune si la nouvelle salle entre en collision avec une autre salle déjà placée. Si ce n'est pas le cas, on continue la génération. Si une collision est détectée, on supprime la salle et on la place vers une autre sortie disponible.
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;"><span class="text-intro-title">Introduction</span></h3>
+                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 2rem;">
+    <span class="text-roguelite-intro">Ce jeu est un twin stick shooter avec de la génération procédurale de salle et avec des IA faites avec le behavior tree. Ce projet a été réalisé en 4 semaines durant ma deuxième année à l'école Studio Mercier.</span>
 </p>
+                
+<!-- Génération Procédurale -->
+<h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;"><span class="text-room-generation-title">Système de Génération de Salle</span></h3>
+<p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+    <span class="text-room-generation-desc">Au début de chaque partie, une suite de salles est générée. La génération procédurale est gérée par un système de seed, ce qui permet de trouver facilement des bugs si l'on découvre une seed avec un agencement de salle incohérent. À chaque génération de salle, on vérifie à l'aide d'une boîte de collision jaune si la nouvelle salle entre en collision avec une autre salle déjà placée. Si ce n'est pas le cas, on continue la génération. Si une collision est détectée, on supprime la salle et on la place vers une autre sortie disponible.</span>
+</p>
+<img src="assets/images/projects/rogue-lite/roguelitegifproceduralgeneration.gif" alt="Génération Procédurale" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;">
 <img src="assets/images/projects/rogue-lite/imagesalleempty.png" alt="Salle Vide" style="width: 100%; border-radius: 0.4rem; margin-bottom: 2rem;">
 
 <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
 
-<h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;">🎮 Types de Salles</h3>
+<h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;"><span class="text-room-types-title">Types de Salles</span></h3>
 
 <div style="margin-bottom: 2rem;">
-    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;">🚪 Salle de Départ</h4>
+    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-starter-room-title">Salle de Départ</span></h4>
     <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-        La salle de départ détermine où commence la génération du donjon et scelle les 3 autres sorties. Chaque sortie disponible est représentée par une flèche verte, comme montré dans l'image ci-dessous.
+        <span class="text-starter-room-desc">La salle de départ détermine où commence la génération du donjon et scelle les 3 autres sorties. Chaque sortie disponible est représentée par une flèche verte, comme montré dans l'image ci-dessous.</span>
     </p>
     <img src="assets/images/projects/rogue-lite/imagesallestarter.png" alt="Salle de Départ" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;">
 </div>
 
 <div style="margin-bottom: 2rem;">
-    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;">🛤️ Couloirs</h4>
+    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-corridor-title">Couloirs</span></h4>
     <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-        Entre chaque salle, il y a des couloirs qui servent de zones de passage et de repos pour le joueur, car la majorité des salles contiennent des pièges. Il existe un seul modèle de couloir dans le donjon.
+        <span class="text-corridor-desc">Entre chaque salle, il y a des couloirs qui servent de zones de passage et de repos pour le joueur, car la majorité des salles contiennent des pièges. Il existe un seul modèle de couloir dans le donjon.</span>
     </p>
     <img src="assets/images/projects/rogue-lite/imagecouloir.png" alt="Couloir" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;">
 </div>
 
 <div style="margin-bottom: 2rem;">
-    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;">🏛️ Salles Principales</h4>
+    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-main-rooms-title">Salles Principales</span></h4>
     <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-        Après chaque couloir, une nouvelle salle avec de nouvelles possibilités de sorties apparaît. Les sorties disponibles sont représentées par des flèches vertes. À chaque génération, le système récupère toutes les sorties disponibles et en choisit une au hasard. Cela permet une génération de donjon imprévisible, pouvant être linéaire ou se disperser dans plusieurs directions. Chaque salle contient une box de collision rouge qui, lorsque le joueur la traverse, ferme les portes et déclenche l'apparition de vagues d'ennemis. Le nombre de vagues et les types d'ennemis sont aléatoires.
-</p>
+        <span class="text-main-rooms-desc">Après chaque couloir, une nouvelle salle avec de nouvelles possibilités de sorties apparaît. Les sorties disponibles sont représentées par des flèches vertes. À chaque génération, le système récupère toutes les sorties disponibles et en choisit une au hasard. Cela permet une génération de donjon imprévisible, pouvant être linéaire ou se disperser dans plusieurs directions. Chaque salle contient une boîte de collision rouge qui, lorsque le joueur la traverse, ferme les portes et déclenche l'apparition de vagues d'ennemis. Le nombre de vagues et les types d'ennemis sont aléatoires, gérés par le système de seed pour garantir la reproductibilité.</span>
+    </p>
     <img src="assets/images/projects/rogue-lite/imagesalle.png" alt="Salle Principale" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;">
 </div>
-</div>
+
 <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
 
-<h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;">✨ Salles Spéciales</h3>
+<h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;"><span class="text-special-rooms-title">Salles Spéciales</span></h3>
 <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 2rem;">
-    À chaque génération de donjon, une salle magasin et une salle de fin apparaissent obligatoirement.
+    <span class="text-special-rooms-intro">À chaque génération de donjon, une salle magasin et une salle de fin apparaissent obligatoirement.</span>
 </p>
 
 <div style="margin-bottom: 2rem;">
-    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;">🏪 Salle Magasin</h4>
+    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-shop-title">Salle Magasin</span></h4>
     <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-        La salle magasin est un lieu où le joueur peut acheter de nouvelles armes en utilisant l'or collecté. Deux armes sont disponibles à l'achat : un fusil à pompe et un pistolet laser.
+        <span class="text-shop-desc">La salle magasin est un lieu où le joueur peut acheter de nouvelles armes en utilisant l'or collecté. Deux armes sont disponibles à l'achat : un fusil à pompe et un pistolet laser.</span>
     </p>
     <img src="assets/images/projects/rogue-lite/imagesalleshop.png" alt="Salle Magasin" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1rem;">
-    <img src="assets/images/projects/rogue-lite/salleshopgif.gif" alt="Salle Magasin Animation" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;">
+    <video src="assets/images/projects/rogue-lite/salleshop.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;"></video>
 </div>
 
+
 <div style="margin-bottom: 2rem;">
-    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;">🚪 Salles de Fin</h4>
+    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-end-rooms-title">Salles de Fin</span></h4>
     <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1.5rem;">
         Il existe deux types de salle de fin de donjon :
     </p>
     
     <div style="margin-left: 1rem; margin-bottom: 1.5rem;">
-        <h5 style="color: var(--primary); margin-bottom: 0.8rem; font-size: 1.1rem;">🌀 Salle Portail</h5>
+        <h5 style="color: var(--primary); margin-bottom: 0.8rem; font-size: 1.1rem;"><span class="text-portal-room-title">Salle Portail</span></h5>
         <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-            La salle portail téléporte le joueur et génère une nouvelle suite de salles, permettant une progression continue du donjon.
+            <span class="text-portal-room-desc">La salle portail téléporte le joueur et génère une nouvelle suite de salles, permettant une progression continue du donjon.</span>
         </p>
         <img src="assets/images/projects/rogue-lite/imagesalleportail.png" alt="Salle Portail" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;">
     </div>
 
     <div style="margin-left: 1rem;">
-        <h5 style="color: var(--primary); margin-bottom: 0.8rem; font-size: 1.1rem;">👹 Salle de Boss</h5>
+        <h5 style="color: var(--primary); margin-bottom: 0.8rem; font-size: 1.1rem;"><span class="text-boss-room-title">Salle de Boss</span></h5>
         <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-            La salle de boss est la dernière salle du donjon et représente le défi final de la partie.
+            <span class="text-boss-room-desc">La salle de boss est la dernière salle du donjon et représente le défi final de la partie.</span>
         </p>
         <img src="assets/images/projects/rogue-lite/imagesalleboss.png" alt="Salle de Boss" style="width: 100%; border-radius: 0.4rem;">
     </div>
 </div>
+
 <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
 
-<h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;">🔫 Les Différentes Armes du Jeu</h3>
+<h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;"><span class="text-weapons-title">Les Différentes Armes du Jeu</span></h3>
 
 <div style="margin-bottom: 2rem;">
-    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;">🔩 Mitraillette</h4>
+    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-gun-title">Mitraillette</span></h4>
     <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-        La mitraillette est l'arme de base du joueur, permettant de tirer en rafale continue.
+        <span class="text-gun-desc">La mitraillette est l'arme de base du joueur, permettant de tirer en rafale continue.</span>
     </p>
     <video src="assets/images/projects/rogue-lite/mitraillette.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;"></video>
 </div>
+
 <div style="margin-bottom: 2rem;">
-    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;">💥 Fusil à Pompe</h4>
+    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-shotgun-title">Fusil à Pompe</span></h4>
     <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-        Le fusil à pompe tire une salve de 5 balles à chaque tir, mais avec une cadence de tir plus lente. Il peut être acheté dans le magasin pour 50 or, l'or étant obtenu en tuant des ennemis.
+        <span class="text-shotgun-desc">Le fusil à pompe tire une salve de 5 balles à chaque tir, mais avec une cadence de tir plus lente. Il peut être acheté dans le magasin pour 50 or, l'or étant obtenu en tuant des ennemis.</span>
     </p>
-    <img src="assets/images/projects/rogue-lite/fusilapompegif.gif" alt="Fusil à Pompe" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;">
+    <video src="assets/images/projects/rogue-lite/fusilapompe.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;"></video>
 </div>
 
 <div style="margin-bottom: 2rem;">
-    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;">⚡ Pistolet Laser</h4>
+    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-laser-title">Pistolet Laser</span></h4>
     <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-        Le pistolet laser tue tout ce qui se trouve sur sa trajectoire et traverse les ennemis, permettant de tuer plusieurs adversaires en un seul tir. Il a un délai de tir plus long et coûte 100 or dans le magasin. Cependant, cette arme ne peut être débloquée que grâce aux gemmes, une monnaie premium obtenue en accomplissant le lobby du jeu. Les gemmes peuvent uniquement être gagnées en terminant une partie.
+        <span class="text-laser-desc">Le pistolet laser tue tout ce qui se trouve sur sa trajectoire et traverse les ennemis, permettant de tuer plusieurs adversaires en un seul tir. Il a un délai de tir plus long et coûte 100 or dans le magasin. Cependant, cette arme ne peut être débloquée que grâce aux gemmes, une monnaie premium obtenue en accomplissant le lobby du jeu. Les gemmes peuvent uniquement être gagnées en terminant une partie.</span>
     </p>
-    <img src="assets/images/projects/rogue-lite/pistoletlasergif.gif" alt="Pistolet Laser" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1rem;">
-    <img src="assets/images/projects/rogue-lite/pistoletlasercraftgif.gif" alt="Craft Pistolet Laser" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;">
+    <video src="assets/images/projects/rogue-lite/pistoletlaser.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 1rem;"></video>
+    <img src="assets/images/projects/rogue-lite/pistoletlasercraft.gif" alt="Craft Pistolet Laser" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;">
 </div>
 
+<hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
 
-                <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
+<h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;"><span class="text-enemies-title">Les Ennemis</span></h3>
+<p style="color: var(--text-light); line-height: 1.8; margin-bottom: 2rem;">
+    <span class="text-enemies-intro">Il y a trois types d'ennemis dans le jeu : le fonceur en rouge, le chasseur en bleu et la tourelle en verte.</span>
+</p>
 
-                <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.5rem;">Description Détaillée</h3>
-                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-                    Roguelite avec génération procédurale de salle et des IA. Ce projet explore les systèmes de génération procédurale avancés et les comportements d'IA sophistiqués pour créer une expérience de jeu réplayable et engageante.
-                </p>
-                <h3 style="color: var(--primary); margin-top: 2rem; margin-bottom: 1rem;">Technologies Utilisées</h3>
-                <div class="project-tags" style="margin-bottom: 2rem;">
-                    <span class="tag">Unreal Engine 5</span>
-                    <span class="tag">Blueprint</span>
-                    <span class="tag">Gameplay</span>
-                    <span class="tag">IA</span>
-                    <span class="tag">Génération Procédurale</span>
-                </div>
-                <h3 style="color: var(--primary); margin-bottom: 1rem;">Liens</h3>
-                <div class="project-links">
-                    <a href="https://github.com/Cookiecrafty/RogueLiteProject" target="_blank">📁 GitHub</a>
-                </div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+    <img src="assets/images/projects/rogue-lite/imagefonceur.png" alt="Fonceur" style="width: 100%; border-radius: 0.4rem;">
+    <img src="assets/images/projects/rogue-lite/imagechasseur.png" alt="Chasseur" style="width: 100%; border-radius: 0.4rem;">
+    <img src="assets/images/projects/rogue-lite/imagetourelle.png" alt="Tourelle" style="width: 100%; border-radius: 0.4rem;">
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-rusher-title">Fonceur</span></h4>
+    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+        <span class="text-rusher-desc">Le fonceur te charge directement pour exploser contre toi et t'infliger de lourds dégâts.</span>
+    </p>
+    <video src="assets/images/projects/rogue-lite/fonceur.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;"></video>
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-hunter-title">Chasseur</span></h4>
+    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+        <span class="text-hunter-desc">Le chasseur se déplace et tire de temps en temps pour vous attaquer.</span>
+    </p>
+    <video src="assets/images/projects/rogue-lite/chasseur.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;"></video>
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-turret-title">Tourelle</span></h4>
+    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+        <span class="text-turret-desc">La tourelle reste immobile et tire continuellement sur le joueur.</span>
+    </p>
+    <video src="assets/images/projects/rogue-lite/tourelle.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;"></video>
+</div>
+
+<hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
+
+<h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;"><span class="text-boss-title">Le Boss</span></h3>
+<p style="color: var(--text-light); line-height: 1.8; margin-bottom: 2rem;">
+    <span class="text-boss-intro">Le boss possède deux phases, chacune avec deux attaques différentes.</span>
+</p>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-phase-1-title">Phase 1</span></h4>
+    
+    <div style="margin-bottom: 1.5rem;">
+        <h5 style="color: var(--primary); margin-bottom: 0.8rem; font-size: 1.1rem;"><span class="text-attack-1-title">Attaque 1 : Balles rebondissantes</span></h5>
+        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+            <span class="text-attack-1-desc">Le boss envoie des balles qui rebondissent une seule fois sur les murs.</span>
+        </p>
+        <video src="assets/images/projects/rogue-lite/attack1.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;"></video>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+        <h5 style="color: var(--primary); margin-bottom: 0.8rem; font-size: 1.1rem;"><span class="text-attack-2-title">Attaque 2 : Balles divisibles à l'impact</span></h5>
+        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+            <span class="text-attack-2-desc">Le boss lance des balles qui se divisent en plusieurs petites balles.</span>
+        </p>
+        <video src="assets/images/projects/rogue-lite/attack2.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;"></video>
+    </div>
+</div>
+
+<div style="margin-bottom: 2rem;">
+    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-phase-2-title">Phase 2</span></h4>
+    
+    <div style="margin-bottom: 1.5rem;">
+        <h5 style="color: var(--primary); margin-bottom: 0.8rem; font-size: 1.1rem;"><span class="text-attack-3-title">Attaque 3 : Laser Rotatif</span></h5>
+        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+            <span class="text-attack-3-desc">Le boss tire un énorme laser qui pivote à 180 degrés.</span>
+        </p>
+        <video src="assets/images/projects/rogue-lite/attack3.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;"></video>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+        <h5 style="color: var(--primary); margin-bottom: 0.8rem; font-size: 1.1rem;"><span class="text-attack-4-title">Attaque 4 : Balles Divisibles sur la durée</span></h5>
+        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+            <span class="text-attack-4-desc">Le boss lance des balles qui se divisent toutes les deux secondes.</span>
+        </p>
+        <video src="assets/images/projects/rogue-lite/attack4.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;"></video>
+    </div>
+</div>
+
+<h3 style="color: var(--primary); margin-top: 2rem; margin-bottom: 1rem;">Technologies Utilisées</h3>
+<div class="project-tags" style="margin-bottom: 2rem;">
+    <span class="tag">Unreal Engine 5</span>
+    <span class="tag">Blueprint</span>
+    <span class="tag">Gameplay</span>
+    <span class="tag">IA</span>
+    <span class="tag">Génération Procédurale</span>
+</div>
+<h3 style="color: var(--primary); margin-bottom: 1rem;">Liens</h3>
+<div class="project-links">
+    <a href="https://github.com/Cookiecrafty/RogueLiteProject" target="_blank">GitHub</a>
+</div>
             </div>
         </div>
     </section>
 </div>
-        <!-- Project 2 Detail Page -->
+ <!-- Project 2 Detail Page -->
 <div id="page-project2" class="page">
     <section class="container page-section">
-        <button class="btn btn-secondary" onclick="navigateTo('projects')" style="margin-bottom: 2rem;">← Retour aux Projets</button>
-        <h2><span>📁</span> ImportTool</h2>
+        <button class="btn btn-secondary" onclick="navigateTo('projects')" style="margin-bottom: 2rem;">← <span class="text-back-to-projects">Retour aux Projets</span></button>
+        <h2><span class="text-importtool-title">ImportTool</span></h2>
         <div style="max-width: 900px; margin: 0 auto;">
             <div class="project-image" style="height: 400px; margin-bottom: 2rem; border-radius: 0.6rem;">⚙️</div>
             <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 0.6rem; padding: 2rem; margin-bottom: 2rem;">
-                <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.5rem;">Description Détaillée</h3>
+                <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.5rem;"><span class="text-detailed-description">Description Détaillée</span></h3>
                 <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-                    Système d'importation et de renommage automatisé des assets via un pipeline optimisé. Ce tool permet une gestion efficace et standardisée de vos assets dans le pipeline de production.
+                    <span class="text-importtool-description">Système d'importation et de renommage automatisé des assets via un pipeline optimisé. Ce tool permet une gestion efficace et standardisée de vos assets dans le pipeline de production.</span>
                 </p>
-                <h3 style="color: var(--primary); margin-top: 2rem; margin-bottom: 1rem;">Technologies Utilisées</h3>
+                <h3 style="color: var(--primary); margin-top: 2rem; margin-bottom: 1rem;"><span class="text-technologies-used">Technologies Utilisées</span></h3>
                 <div class="project-tags" style="margin-bottom: 2rem;">
-                    <span class="tag">Unreal Engine 5</span>
-                    <span class="tag">C++</span>
-                    <span class="tag">Pipeline</span>
-                    <span class="tag">Tool</span>
+                    <span class="tag"><span class="text-tag-ue5">Unreal Engine 5</span></span>
+                    <span class="tag"><span class="text-tag-cpp">C++</span></span>
+                    <span class="tag"><span class="text-tag-pipeline">Pipeline</span></span>
+                    <span class="tag"><span class="text-tag-tool">Tool</span></span>
                 </div>
-                <h3 style="color: var(--primary); margin-bottom: 1rem;">Liens</h3>
+                <h3 style="color: var(--primary); margin-bottom: 1rem;"><span class="text-links">Liens</span></h3>
                 <div class="project-links">
-                    <a href="https://github.com/Cookiecrafty/ImportTool" target="_blank">📁 GitHub</a>
+                    <a href="https://github.com/Cookiecrafty/ImportTool" target="_blank">GitHub</a>
                 </div>
             </div>
         </div>
     </section>
 </div>
 
-        <!-- Project 3 Detail Page -->
+<!-- Project 3 Detail Page -->
 <div id="page-project3" class="page">
     <section class="container page-section">
-        <button class="btn btn-secondary" onclick="navigateTo('projects')" style="margin-bottom: 2rem;">← Retour aux Projets</button>
-        <h2><span>📁</span> TwoAgainstTime</h2>
+        <button class="btn btn-secondary" onclick="navigateTo('projects')" style="margin-bottom: 2rem;">← <span class="text-back-to-projects">Retour aux Projets</span></button>
+        <h2><span class="text-twoagainsttime-title">TwoAgainstTime</span></h2>
         <div style="max-width: 900px; margin: 0 auto;">
             <div class="project-image" style="height: 400px; margin-bottom: 2rem; border-radius: 0.6rem;">🌐</div>
             <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 0.6rem; padding: 2rem; margin-bottom: 2rem;">
-                <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.5rem;">Description Détaillée</h3>
+                <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.5rem;"><span class="text-detailed-description">Description Détaillée</span></h3>
                 <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-                    Jeu multijoueur coop en ligne avec chat vocal de proximité. Ce projet intègre des systèmes avancés de networking pour la synchronisation en temps réel et une implémentation complète du voice chat spatial pour une immersion maximale.
+                    <span class="text-twoagainsttime-description">Jeu multijoueur coop en ligne avec chat vocal de proximité. Ce projet intègre des systèmes avancés de networking pour la synchronisation en temps réel et une implémentation complète du voice chat spatial pour une immersion maximale.</span>
                 </p>
-                <h3 style="color: var(--primary); margin-top: 2rem; margin-bottom: 1rem;">Technologies Utilisées</h3>
+                <h3 style="color: var(--primary); margin-top: 2rem; margin-bottom: 1rem;"><span class="text-technologies-used">Technologies Utilisées</span></h3>
                 <div class="project-tags" style="margin-bottom: 2rem;">
-                    <span class="tag">Unreal Engine 5</span>
-                    <span class="tag">Blueprint</span>
-                    <span class="tag">C++</span>
-                    <span class="tag">Voice Chat</span>
-                    <span class="tag">Multiplayer Online</span>
+                    <span class="tag"><span class="text-tag-ue5">Unreal Engine 5</span></span>
+                    <span class="tag"><span class="text-tag-blueprint">Blueprint</span></span>
+                    <span class="tag"><span class="text-tag-cpp">C++</span></span>
+                    <span class="tag"><span class="text-tag-voicechat">Voice Chat</span></span>
+                    <span class="tag"><span class="text-tag-multiplayer">Multiplayer Online</span></span>
                 </div>
-                <h3 style="color: var(--primary); margin-bottom: 1rem;">Liens</h3>
+                <h3 style="color: var(--primary); margin-bottom: 1rem;"><span class="text-links">Liens</span></h3>
                 <div class="project-links">
-                    <a href="https://github.com/Cookiecrafty/CoopASG2" target="_blank">📁 GitHub</a>
+                    <a href="https://github.com/Cookiecrafty/CoopASG2" target="_blank">GitHub</a>
                 </div>
             </div>
         </div>
     </section>
 </div>
-        <!-- Contact Page -->
-        <div id="page-contact" class="page">
-            <section class="container page-section">
-                <div class="contact-container">
-                    <div class="contact-header">
-                       <div class="profile-avatar" style="width: 150px; height: 150px; border-radius: 50%; overflow: hidden;">
+
+       <!-- Contact Page -->
+<div id="page-contact" class="page">
+    <section class="container page-section">
+        <div class="contact-container">
+            <div class="contact-header">
+               <div class="profile-avatar" style="width: 150px; height: 150px; border-radius: 50%; overflow: hidden;">
     <img src="assets/images/thomasboinetprofilepicture.png" alt="Thomas Boinet" style="width: 100%; height: 100%; object-fit: cover;">
 </div>
-                        <h2>Me Contacter</h2>
-                        <p class="contact-subtitle">Construisons quelque chose d'incroyable ensemble.</p>
-                    </div>
+                <h2><span class="text-contact-subtitle">Me Contacter</span></h2>
+                <p class="contact-subtitle"><span class="text-contact-message">Construisons quelque chose d'incroyable ensemble.</span></p>
+            </div>
 
-                    <div class="contact-notice">
-                        <span class="notice-icon">●</span>
-                        <p>N'hésitez pas à me contacter !<br>Je suis actuellement en 3 ème année de Game Developer à l'école Studio Mercier, mais disponible pour de nouvelles opportunités à partir du 1er Avril 2026 !</p>
-                    </div>
+            <div class="contact-notice">
+                <span class="notice-icon">●</span>
+                <p><span class="text-contact-notice">N'hésitez pas à me contacter ! Je suis actuellement en 3ème année de Game Developer à l'école Studio Mercier, mais disponible pour de nouvelles opportunités à partir du 1er Avril 2026 !</span></p>
+            </div>
 
-                    <form id="contact-form" class="contact-form">
-                        <div class="form-group">
-                            <label for="name" class="form-label">NOM <span class="required">*</span></label>
-                            <input type="text" id="name" name="name" placeholder="Votre nom" class="form-input" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email" class="form-label">EMAIL <span class="required">*</span></label>
-                            <input type="email" id="email" name="email" placeholder="votre.email@example.com" class="form-input" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="subject" class="form-label">SUJET</label>
-                            <input type="text" id="subject" name="subject" placeholder="De quoi s'agit-il ?" class="form-input">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message" class="form-label">MESSAGE <span class="required">*</span></label>
-                            <textarea id="message" name="message" placeholder="Parlez-moi de votre projet..." class="form-textarea" rows="6"></textarea>
-                            <div class="char-count"><span id="char-count">0</span>/1000</div>
-                        </div>
-
-                                                <button type="submit" class="btn btn-submit">ENVOYER LE MESSAGE</button>
-                    </form>
-
-                    <div class="contact-actions">
-                        <a href="https://drive.google.com/uc?export=download&id=1gw_to2ZWTvvnDrpO3qdEvrWFMWLGl6O3" download="BOINET-Thomas_CV_FR.pdf" class="action-btn action-download">
-                            ⬇️ Télécharger le CV
-                        </a>
-                        <button type="button" class="action-btn action-copy" onclick="copyEmail()">
-                            📧 Copier l'Email
-                        </button>
-                    </div>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name" class="form-label"><span class="text-form-name">NOM</span> <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" class="form-input" required>
                 </div>
-            </section>
+
+                <div class="form-group">
+                    <label for="email" class="form-label"><span class="text-form-email">EMAIL</span> <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="votre.email@example.com" class="form-input" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject" class="form-label"><span class="text-form-subject">SUJET</span></label>
+                    <input type="text" id="subject" name="subject" placeholder="De quoi s'agit-il ?" class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="message" class="form-label"><span class="text-form-message">MESSAGE</span> <span class="required">*</span></label>
+                    <textarea id="message" name="message" placeholder="Parlez-moi de votre projet..." class="form-textarea" rows="6"></textarea>
+                    <div class="char-count"><span id="char-count">0</span>/1000</div>
+                </div>
+
+                <button type="submit" class="btn btn-submit"><span class="text-form-submit">ENVOYER LE MESSAGE</span></button>
+            </form>
+
+            <div class="contact-actions">
+                <a href="https://drive.google.com/uc?export=download&id=1gw_to2ZWTvvnDrpO3qdEvrWFMWLGl6O3" download="BOINET-Thomas_CV_FR.pdf" class="action-btn action-download">
+                    <span class="text-contact-download">Télécharger le CV</span>
+                </a>
+                <button type="button" class="action-btn action-copy" onclick="copyEmail()">
+                    <span class="text-contact-copy">Copier l'Email</span>
+                </button>
+            </div>
         </div>
-    </div>
+    </section>
+</div>
+
 
     
 
@@ -1400,11 +1477,11 @@
             "text-bio-p3": "Avec un parcours en Game Developer, j'adore créer des mécaniques de gameplay innovantes et engageantes, car j'adore donner vie aux créations des artistes et transformer leurs visions en expériences de jeu captivantes.",
             "text-bio-p4": "Mon objectif est de développer des systèmes robustes et performants qui permettent aux joueurs de vivre des aventures inoubliables, tout en travaillant en étroite collaboration avec les équipes créatives.",
             "text-section-skills": "Compétences",
-            "text-skill-engine": "🎮 Moteur de Jeu",
-            "text-skill-language": "📝 Language de Programmation",
-            "text-skill-storage": "💾 Stockage",
-            "text-skill-art": "🎨 Logiciel Artistique",
-            "text-skill-sound": "🎵 Logiciel de Son",
+            "text-skill-engine": "Moteur de Jeu",
+            "text-skill-language": "Language de Programmation",
+            "text-skill-storage": "Stockage",
+            "text-skill-art": "Logiciel Artistique",
+            "text-skill-sound": "Logiciel de Son",
             "text-section-education": "Formation",
             "text-degree-1": "Bachelor Développeur Jeux Vidéo",
             "text-degree-1-spec": "Spécialisation : Programmation",
@@ -1431,7 +1508,90 @@
             "text-procedural-desc": "Système de génération procédurale avancé permettant la création automatique et aléatoire de niveaux uniques. Chaque salle est générée en fonction de paramètres définis, assurant une expérience de jeu réplayable avec une grande variété de configurations de niveaux.",
             "text-detailed-desc": "Description Détaillée",
             "text-project-1-full-desc": "Roguelite avec génération procédurale de salle et des IA. Ce projet explore les systèmes de génération procédurale avancés et les comportements d'IA sophistiqués pour créer une expérience de jeu réplayable et engageante.",
-            "text-footer": "Tous droits réservés."
+            "text-footer": "Tous droits réservés.",
+		"text-roguelite-intro": "Ce jeu est un twin stick shooter avec de la génération procédurale de salle et avec des IA faites avec le behavior tree. Ce projet a été réalisé en 4 semaines durant ma deuxième année à l'école Studio Mercier.",
+"text-room-generation-title": "Système de Génération de Salle",
+"text-room-generation-desc": "Au début de chaque partie, une suite de salles est générée. La génération procédurale est gérée par un système de seed, ce qui permet de trouver facilement des bugs si l'on découvre une seed avec un agencement de salle incohérent. À chaque génération de salle, on vérifie à l'aide d'une boîte de collision jaune si la nouvelle salle entre en collision avec une autre salle déjà placée. Si ce n'est pas le cas, on continue la génération. Si une collision est détectée, on supprime la salle et on la place vers une autre sortie disponible.",
+"text-room-types-title": "Types de Salles",
+"text-starter-room-title": "Salle de Départ",
+"text-starter-room-desc": "La salle de départ détermine où commence la génération du donjon et scelle les 3 autres sorties. Chaque sortie disponible est représentée par une flèche verte, comme montré dans l'image ci-dessous.",
+"text-corridor-title": "Couloirs",
+"text-corridor-desc": "Entre chaque salle, il y a des couloirs qui servent de zones de passage et de repos pour le joueur, car la majorité des salles contiennent des pièges. Il existe un seul modèle de couloir dans le donjon.",
+"text-main-rooms-title": "Salles Principales",
+"text-main-rooms-desc": "Après chaque couloir, une nouvelle salle avec de nouvelles possibilités de sorties apparaît. Les sorties disponibles sont représentées par des flèches vertes. À chaque génération, le système récupère toutes les sorties disponibles et en choisit une au hasard. Cela permet une génération de donjon imprévisible, pouvant être linéaire ou se disperser dans plusieurs directions. Chaque salle contient une boîte de collision rouge qui, lorsque le joueur la traverse, ferme les portes et déclenche l'apparition de vagues d'ennemis. Le nombre de vagues et les types d'ennemis sont aléatoires, gérés par le système de seed pour garantir la reproductibilité.",
+"text-special-rooms-title": "Salles Spéciales",
+"text-special-rooms-intro": "À chaque génération de donjon, une salle magasin et une salle de fin apparaissent obligatoirement.",
+"text-shop-title": "Salle Magasin",
+"text-shop-desc": "La salle magasin est un lieu où le joueur peut acheter de nouvelles armes en utilisant l'or collecté. Deux armes sont disponibles à l'achat : un fusil à pompe et un pistolet laser.",
+"text-end-rooms-title": "Salles de Fin",
+"text-portal-room-title": "Salle Portail",
+"text-portal-room-desc": "La salle portail téléporte le joueur et génère une nouvelle suite de salles, permettant une progression continue du donjon.",
+"text-boss-room-title": "Salle de Boss",
+"text-boss-room-desc": "La salle de boss est la dernière salle du donjon et représente le défi final de la partie.",
+"text-weapons-title": "Les Différentes Armes du Jeu",
+"text-gun-title": "Mitraillette",
+"text-gun-desc": "La mitraillette est l'arme de base du joueur, permettant de tirer en rafale continue.",
+"text-shotgun-title": "Fusil à Pompe",
+"text-shotgun-desc": "Le fusil à pompe tire une salve de 5 balles à chaque tir, mais avec une cadence de tir plus lente. Il peut être acheté dans le magasin pour 50 or, l'or étant obtenu en tuant des ennemis.",
+"text-laser-title": "Pistolet Laser",
+"text-laser-desc": "Le pistolet laser tue tout ce qui se trouve sur sa trajectoire et traverse les ennemis, permettant de tuer plusieurs adversaires en un seul tir. Il a un délai de tir plus long et coûte 100 or dans le magasin. Cependant, cette arme ne peut être débloquée que grâce aux gemmes, une monnaie premium obtenue en accomplissant le lobby du jeu. Les gemmes peuvent uniquement être gagnées en terminant une partie.",
+"text-enemies-title": "Les Ennemis",
+"text-enemies-intro": "Il y a trois types d'ennemis dans le jeu : le fonceur en rouge, le chasseur en bleu et la tourelle en verte.",
+"text-rusher-title": "Fonceur",
+"text-rusher-desc": "Le fonceur te charge directement pour exploser contre toi et t'infliger de lourds dégâts.",
+"text-hunter-title": "Chasseur",
+"text-hunter-desc": "Le chasseur se déplace et tire de temps en temps pour vous attaquer.",
+"text-turret-title": "Tourelle",
+"text-turret-desc": "La tourelle reste immobile et tire continuellement sur le joueur.",
+"text-boss-title": "Le Boss",
+"text-boss-intro": "Le boss possède deux phases, chacune avec deux attaques différentes.",
+"text-phase-1-title": "Phase 1",
+"text-attack-1-title": "Attaque 1 : Balles Rebondissantes",
+"text-attack-1-desc": "Le boss envoie des balles qui rebondissent une seule fois sur les murs.",
+"text-attack-2-title": "Attaque 2 : Balles Divisibles",
+"text-attack-2-desc": "Le boss lance des balles qui se divisent en plusieurs petites balles.",
+"text-phase-2-title": "Phase 2",
+"text-attack-3-title": "Attaque 3 : Laser Rotatif",
+"text-attack-3-desc": "Le boss tire un énorme laser qui pivote à 180 degrés.",
+"text-attack-4-title": "Attaque 4 : Balles Divisibles en Cascade",
+"text-attack-4-desc": "Le boss lance des balles qui se divisent toutes les deux secondes.",
+"text-nav-home": "Accueil",
+"text-nav-about": "À Propos",
+"text-nav-projects": "Projets",
+"text-nav-cv": "CV",
+"text-nav-contact": "Contact",
+"text-contact-subtitle": "Me Contacter",
+"text-contact-message": "Construisons quelque chose d'incroyable ensemble.",
+"text-contact-notice": "N'hésitez pas à me contacter ! Je suis actuellement en 3ème année de Game Developer à l'école Studio Mercier, mais disponible pour de nouvelles opportunités à partir du 1er Avril 2026 !",
+"text-form-name": "NOM",
+"text-form-email": "EMAIL",
+"text-form-subject": "SUJET",
+"text-form-message": "MESSAGE",
+"text-form-submit": "ENVOYER LE MESSAGE",
+"text-contact-download": "Télécharger le CV",
+"text-contact-copy": "Copier l'Email",
+"text-form-name-placeholder": "Votre nom",
+"text-form-email-placeholder": "votre.email@example.com",
+"text-form-subject-placeholder": "De quoi s'agit-il ?",
+"text-form-message-placeholder": "Parlez-moi de votre projet...",
+"text-back-to-projects": "Retour aux Projets",
+"text-roguelite-title": "RogueLiteProject",
+"text-intro-title": "Introduction",
+"text-importtool-title": "ImportTool",
+"text-importtool-description": "Système d'importation et de renommage automatisé des assets via un pipeline optimisé. Ce tool permet une gestion efficace et standardisée de vos assets dans le pipeline de production.",
+"text-twoagainsttime-title": "TwoAgainstTime",
+"text-twoagainsttime-description": "Jeu multijoueur coop en ligne avec chat vocal de proximité. Ce projet intègre des systèmes avancés de networking pour la synchronisation en temps réel et une implémentation complète du voice chat spatial pour une immersion maximale.",
+"text-detailed-description": "Description Détaillée",
+"text-technologies-used": "Technologies Utilisées",
+"text-links": "Liens",
+"text-tag-ue5": "Unreal Engine 5",
+"text-tag-cpp": "C++",
+"text-tag-pipeline": "Pipeline",
+"text-tag-tool": "Tool",
+"text-tag-blueprint": "Blueprint",
+"text-tag-voicechat": "Voice Chat",
+"text-tag-multiplayer": "Multiplayer Online"
+
         },
         en: {
             "text-home": "Home",
@@ -1450,11 +1610,11 @@
             "text-bio-p3": "With a background in Game Development, I love creating innovative and engaging gameplay mechanics, because I love bringing artists' creations to life and transforming their visions into captivating game experiences.",
             "text-bio-p4": "My goal is to develop robust and performant systems that allow players to experience unforgettable adventures, while working closely with creative teams.",
             "text-section-skills": "Skills",
-            "text-skill-engine": "🎮 Game Engine",
-            "text-skill-language": "📝 Programming Language",
-            "text-skill-storage": "💾 Storage",
-            "text-skill-art": "🎨 Art Software",
-            "text-skill-sound": "🎵 Sound Software",
+            "text-skill-engine": "Game Engine",
+            "text-skill-language": "Programming Language",
+            "text-skill-storage": "Storage",
+            "text-skill-art": "Art Software",
+            "text-skill-sound": "Sound Software",
             "text-section-education": "Education",
             "text-degree-1": "Bachelor Game Developer",
             "text-degree-1-spec": "Specialization: Programming",
@@ -1481,7 +1641,91 @@
             "text-procedural-desc": "Advanced procedural generation system allowing automatic and random creation of unique levels. Each room is generated based on defined parameters, ensuring a replayable gaming experience with great variety of level configurations.",
             "text-detailed-desc": "Detailed Description",
             "text-project-1-full-desc": "Roguelite with procedural room generation and AI. This project explores advanced procedural generation systems and sophisticated AI behaviors to create a replayable and engaging gaming experience.",
-            "text-footer": "All rights reserved."
+            "text-footer": "All rights reserved.",
+		"text-roguelite-intro": "This game is a twin stick shooter with procedural room generation and AI made with behavior trees. This project was completed in 4 weeks during my second year at Studio Mercier school.",
+"text-room-generation-title": "Room Generation System",
+"text-room-generation-desc": "At the start of each game, a sequence of rooms is generated. Procedural generation is managed by a seed system, which makes it easy to find bugs if a seed with an inconsistent room layout is discovered. Each time a room is generated, a yellow collision box checks if the new room collides with an already placed room. If not, generation continues. If a collision is detected, the room is deleted and placed toward another available exit.",
+"text-room-types-title": "Room Types",
+"text-starter-room-title": "Starter Room",
+"text-starter-room-desc": "The starter room determines where dungeon generation begins and seals the 3 other exits. Each available exit is represented by a green arrow, as shown in the image below.",
+"text-corridor-title": "Corridors",
+"text-corridor-desc": "Between each room, there are corridors that serve as passage and rest areas for the player, as most rooms contain traps. There is only one corridor model in the dungeon.",
+"text-main-rooms-title": "Main Rooms",
+"text-main-rooms-desc": "After each corridor, a new room with new exit possibilities appears. Available exits are represented by green arrows. Each time a room is generated, the system retrieves all available exits and randomly chooses one. This allows for unpredictable dungeon generation, whether linear or spreading in multiple directions. Each room contains a red collision box that, when the player touches it, closes the doors and triggers waves of enemies. The number of waves and enemy types are random, managed by the seed system to ensure reproducibility.",
+"text-special-rooms-title": "Special Rooms",
+"text-special-rooms-intro": "With each dungeon generation, a shop room and an end room appear obligatorily.",
+"text-shop-title": "Shop Room",
+"text-shop-desc": "The shop room is a place where the player can buy new weapons using collected gold. Two weapons are available for purchase: a shotgun and a laser pistol.",
+"text-end-rooms-title": "End Rooms",
+"text-portal-room-title": "Portal Room",
+"text-portal-room-desc": "The portal room teleports the player and generates a new sequence of rooms, allowing continuous dungeon progression.",
+"text-boss-room-title": "Boss Room",
+"text-boss-room-desc": "The boss room is the final room of the dungeon and represents the ultimate challenge of the game.",
+"text-weapons-title": "Different Weapons",
+"text-gun-title": "Machine Gun",
+"text-gun-desc": "The machine gun is the player's basic weapon, allowing continuous burst fire.",
+"text-shotgun-title": "Shotgun",
+"text-shotgun-desc": "The shotgun fires a burst of 5 bullets per shot, but with a slower fire rate. It can be purchased in the shop for 50 gold, which is obtained by killing enemies.",
+"text-laser-title": "Laser Pistol",
+"text-laser-desc": "The laser pistol kills everything in its path and passes through enemies, allowing you to kill multiple enemies in one shot. It has a longer fire delay and costs 100 gold in the shop. However, this weapon can only be unlocked with gems, a premium currency obtained by completing the game lobby. Gems can only be earned by finishing a game.",
+"text-enemies-title": "Enemies",
+"text-enemies-intro": "There are three types of enemies in the game: the red rusher, the blue hunter, and the green turret.",
+"text-rusher-title": "Rusher",
+"text-rusher-desc": "The rusher charges directly at you to explode against you and deal heavy damage.",
+"text-hunter-title": "Hunter",
+"text-hunter-desc": "The hunter moves around and shoots occasionally to attack you.",
+"text-turret-title": "Turret",
+"text-turret-desc": "The turret stays still and continuously shoots at the player.",
+"text-boss-title": "The Boss",
+"text-boss-intro": "The boss has two phases, each with two different attacks.",
+"text-phase-1-title": "Phase 1",
+"text-attack-1-title": "Attack 1: Bouncing Bullets",
+"text-attack-1-desc": "The boss sends bullets that bounce once off walls.",
+"text-attack-2-title": "Attack 2: Splitting Bullets",
+"text-attack-2-desc": "The boss launches bullets that split into multiple small bullets.",
+"text-phase-2-title": "Phase 2",
+"text-attack-3-title": "Attack 3: Rotating Laser",
+"text-attack-3-desc": "The boss fires a huge laser that pivots at 180 degrees.",
+"text-attack-4-title": "Attack 4: Cascading Split Bullets",
+"text-attack-4-desc": "The boss launches bullets that split every two seconds.",
+"text-nav-home": "Home",
+"text-nav-about": "About",
+"text-nav-projects": "Projects",
+"text-nav-cv": "Resume",
+"text-nav-contact": "Contact",
+"text-contact-subtitle": "Contact Me",
+"text-contact-message": "Let's build something amazing together.",
+"text-contact-notice": "Feel free to contact me! I'm currently in my 3rd year as a Game Developer at Studio Mercier school, but available for new opportunities from April 1st, 2026!",
+"text-form-name": "NAME",
+"text-form-email": "EMAIL",
+"text-form-subject": "SUBJECT",
+"text-form-message": "MESSAGE",
+"text-form-submit": "SEND MESSAGE",
+"text-contact-download": "Download CV",
+"text-contact-copy": "Copy Email",
+"text-form-name-placeholder": "Your name",
+"text-form-email-placeholder": "your.email@example.com",
+"text-form-subject-placeholder": "What is this about?",
+"text-form-message-placeholder": "Tell me about your project...",
+"text-back-to-projects": "Back to Projects",
+"text-roguelite-title": "RogueLiteProject",
+"text-intro-title": "Introduction",
+"text-importtool-title": "ImportTool",
+"text-importtool-description": "Automated asset import and renaming system via an optimized pipeline. This tool allows efficient and standardized management of your assets in the production pipeline.",
+"text-twoagainsttime-title": "TwoAgainstTime",
+"text-twoagainsttime-description": "Online multiplayer coop game with proximity voice chat. This project integrates advanced networking systems for real-time synchronization and complete implementation of spatial voice chat for maximum immersion.",
+"text-detailed-description": "Detailed Description",
+"text-technologies-used": "Technologies Used",
+"text-links": "Links",
+"text-tag-ue5": "Unreal Engine 5",
+"text-tag-cpp": "C++",
+"text-tag-pipeline": "Pipeline",
+"text-tag-tool": "Tool",
+"text-tag-blueprint": "Blueprint",
+"text-tag-voicechat": "Voice Chat",
+"text-tag-multiplayer": "Multiplayer Online"
+
+
         }
     };
 
@@ -1493,33 +1737,43 @@
     }
 
     function setLanguage(lang) {
-        localStorage.setItem('language', lang);
-        document.documentElement.lang = lang;
-        
-        const langDisplay = document.getElementById('lang-display');
-        const flag = document.getElementById('flag');
-        
-        if (langDisplay && flag) {
-            if (lang === 'fr') {
-                langDisplay.textContent = 'FR';
-                flag.textContent = '🇫🇷';
-            } else {
-                langDisplay.textContent = 'EN';
-                flag.textContent = '🇬🇧';
-            }
+    localStorage.setItem('language', lang);
+    document.documentElement.lang = lang;
+    
+    const langDisplay = document.getElementById('lang-display');
+    const flag = document.getElementById('flag');
+    
+    if (langDisplay && flag) {
+        if (lang === 'fr') {
+            langDisplay.textContent = 'FR';
+            flag.textContent = '🇫🇷';
+        } else {
+            langDisplay.textContent = 'EN';
+            flag.textContent = '🇬🇧';
         }
-
-        // Update all text elements
-        const elements = document.querySelectorAll('[class*="text-"]');
-        elements.forEach(element => {
-            const classes = element.className.split(' ');
-            classes.forEach(className => {
-                if (className.startsWith('text-') && translations[lang][className]) {
-                    element.textContent = translations[lang][className];
-                }
-            });
-        });
     }
+
+    // Update all text elements
+    const elements = document.querySelectorAll('[class*="text-"]');
+    elements.forEach(element => {
+        const classes = element.className.split(' ');
+        classes.forEach(className => {
+            if (className.startsWith('text-') && translations[lang][className]) {
+                element.textContent = translations[lang][className];
+            }
+        });
+    });
+
+    // Update placeholders
+    const inputs = document.querySelectorAll('[data-placeholder-key]');
+    inputs.forEach(input => {
+        const key = input.getAttribute('data-placeholder-key');
+        if (translations[lang] && translations[lang][key]) {
+            input.placeholder = translations[lang][key];
+        }
+    });
+}
+
 
     function toggleLanguage() {
         const currentLang = localStorage.getItem('language') || 'fr';
