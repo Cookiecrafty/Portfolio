@@ -853,6 +853,44 @@
             justify-content: center;
             align-items: center;
         }
+ .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        /* Nouvelles catégories identiques aux autres */
+        .algorithms-category,
+        .capabilities-category {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 2.5rem;
+            border-radius: 0.6rem;
+            transition: all 0.3s ease;
+        }
+
+        .algorithms-category:hover,
+        .capabilities-category:hover {
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(46, 204, 113, 0.1);
+        }
+
+        /* Titres en h3 vert comme les autres */
+        .algorithms-category h4,
+        .capabilities-category h4 {
+            color: var(--primary) !important;
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+        }
+
+        /* Skill-items en vert comme les autres */
+        .algorithms-category .skill-list .skill-item,
+        .capabilities-category .skill-list .skill-item {
+            background: rgba(46, 204, 113, 0.1) !important;
+            border: 1px solid rgba(46, 204, 113, 0.3) !important;
+            color: var(--text) !important;
+        }
 
         /* Footer */
         footer {
@@ -941,56 +979,83 @@
             </p>
         </div>
 
-        <!-- Compétences Section -->
-        <h2 style="margin-top: 4rem;"><span class="text-section-skills">Compétences</span></h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3><span class="text-skill-engine">Moteur de Jeu</span></h3>
-                <div class="skill-list">
-                    <span class="skill-item">Unreal Engine 4 &amp; 5</span>
-                    <span class="skill-item">Unity</span>
-                    <span class="skill-item">Ren'Py</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3><span class="text-skill-language">Language de Programmation</span></h3>
-                <div class="skill-list">
-                    <span class="skill-item">C++</span>
-                    <span class="skill-item">Blueprint</span>
-                    <span class="skill-item">C#</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3><span class="text-skill-storage">Stockage</span></h3>
-                <div class="skill-list">
-                    <span class="skill-item">Github</span>
-                    <span class="skill-item">Perforce</span>
-                    <span class="skill-item">TortoiseSVN</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3><span class="text-skill-art">Logiciel Artistique</span></h3>
-                <div class="skill-list">
-                    <span class="skill-item">Maya</span>
-                    <span class="skill-item">Blender</span>
-                    <span class="skill-item">Houdini</span>
-                    <span class="skill-item">Photoshop</span>
-                    <span class="skill-item">Adobe Illustrator</span>
-                    <span class="skill-item">Adobe Substance 3D Painter</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3><span class="text-skill-sound">Logiciel de Son</span></h3>
-                <div class="skill-list">
-                    <span class="skill-item">Wwise</span>
-                    <span class="skill-item">Reaper</span>
-                </div>
-            </div>
+       <!-- Compétences Section -->
+<h2 style="margin-top: 4rem;"><span class="text-section-skills">Compétences</span></h2>
+<div class="skills-grid">
+    <div class="skill-category">
+        <h3><span class="text-skill-engine">Moteur de Jeu</span></h3>
+        <div class="skill-list">
+            <span class="skill-item">Unreal Engine 4 & 5</span>
+            <span class="skill-item">Unity</span>
+            <span class="skill-item">Ren'Py</span>
         </div>
+    </div>
+
+    <div class="skill-category">
+        <h3><span class="text-skill-language">Language de Programmation</span></h3>
+        <div class="skill-list">
+            <span class="skill-item">C++</span>
+            <span class="skill-item">Blueprint</span>
+            <span class="skill-item">C#</span>
+        </div>
+    </div>
+
+   <div class="skill-category algorithms-category">
+    <h3><span class="text-algorithms-mastered">Algorithmes maîtrisés</span></h3>
+    <div class="skill-list">
+        <span class="skill-item"><span class="text-syracuse">Conjecture de Syracuse</span></span>
+        <span class="skill-item"><span class="text-bubble-sort">Bubble Sort</span></span>
+        <span class="skill-item"><span class="text-a-star">A*</span></span>
+        <span class="skill-item"><span class="text-dijkstra">Dijkstra</span></span>
+    </div>
+</div>
+
+<!-- CAPACITÉS -->
+<div class="skill-category capabilities-category">
+    <h3><span class="text-capabilities">Ce que je sais faire</span></h3>
+    <div class="skill-list">
+        <span class="skill-item"><span class="text-multiplayer-local">Jeu multijoueur local</span></span>
+        <span class="skill-item"><span class="text-multiplayer-network">Jeu multijoueur réseau</span></span>
+        <span class="skill-item"><span class="text-ai">IA</span></span>
+        <span class="skill-item"><span class="text-behavior-tree">Behavior Tree</span></span>
+        <span class="skill-item"><span class="text-state-tree">State Tree</span></span>
+        <span class="skill-item"><span class="text-proximity-chat">Chat de proximité</span></span>
+        <span class="skill-item"><span class="text-vehicle">Véhicule</span></span>
+        <span class="skill-item"><span class="text-tools">Outils</span></span>
+        <span class="skill-item"><span class="text-commonui">CommonUI</span></span>
+        <span class="skill-item"><span class="text-gas">Gameplay Abilities System</span></span>
+        <span class="skill-item"><span class="text-procedural">Génération procédurale</span></span>
+    </div>
+</div>
+    <div class="skill-category">
+        <h3><span class="text-skill-version-control">Version Control</span></h3>
+        <div class="skill-list">
+            <span class="skill-item">Github</span>
+            <span class="skill-item">Perforce</span>
+            <span class="skill-item">TortoiseSVN</span>
+        </div>
+    </div>
+
+    <div class="skill-category">
+        <h3><span class="text-skill-art">Logiciel Artistique</span></h3>
+        <div class="skill-list">
+            <span class="skill-item">Maya</span>
+            <span class="skill-item">Blender</span>
+            <span class="skill-item">Houdini</span>
+            <span class="skill-item">Photoshop</span>
+            <span class="skill-item">Adobe Illustrator</span>
+            <span class="skill-item">Adobe Substance 3D Painter</span>
+        </div>
+    </div>
+
+    <div class="skill-category">
+        <h3><span class="text-skill-sound">Logiciel de Son</span></h3>
+        <div class="skill-list">
+            <span class="skill-item">Wwise</span>
+            <span class="skill-item">Reaper</span>
+        </div>
+    </div>
+</div>
 
         <!-- Formation Section -->
         <h2 style="margin-top: 4rem;"><span class="text-section-education">Formation</span></h2>
@@ -1323,19 +1388,19 @@
     </div>
 </div>
 
-<h3 style="color: var(--primary); margin-top: 2rem; margin-bottom: 1rem;">Technologies Utilisées</h3>
+<h3 style="color: var(--primary); margin-top: 2rem; margin-bottom: 1rem;"><span class="text-technologies-used">Technologies Utilisées</span></h3>
 <div class="project-tags" style="margin-bottom: 2rem;">
-    <span class="tag">Unreal Engine 5</span>
-    <span class="tag">Blueprint</span>
-    <span class="tag">Gameplay</span>
-    <span class="tag">IA</span>
-    <span class="tag">Génération Procédurale</span>
+    <span class="tag"><span class="text-tag-ue5">Unreal Engine 5</span></span>
+    <span class="tag"><span class="text-tag-blueprint">Blueprint</span></span>
+    <span class="tag"><span class="text-tag-gameplay">Gameplay</span></span>
+    <span class="tag"><span class="text-tag-ai">IA</span></span>
+    <span class="tag"><span class="text-tag-procedural">Génération Procédurale</span></span>
 </div>
-<h3 style="color: var(--primary); margin-bottom: 1rem;">Liens</h3>
+<h3 style="color: var(--primary); margin-bottom: 1rem;"><span class="text-links">Liens</span></h3>
 <div class="project-links">
-    <a href="https://github.com/Cookiecrafty/RogueLiteProject" target="_blank">GitHub</a>
+    <a href="https://github.com/Cookiecrafty/RogueLiteProject" target="_blank"><span class="text-github-link">GitHub</span></a>
+</div>            
 </div>
-            </div>
         </div>
     </section>
 </div>
@@ -1396,7 +1461,7 @@
     </section>
 </div>
 
-       <!-- Contact Page -->
+      <!-- Contact Page -->
 <div id="page-contact" class="page">
     <section class="container page-section">
         <div class="contact-container">
@@ -1416,22 +1481,22 @@
             <form id="contact-form" class="contact-form">
                 <div class="form-group">
                     <label for="name" class="form-label"><span class="text-form-name">NOM</span> <span class="required">*</span></label>
-                    <input type="text" id="name" name="name" placeholder="Votre nom" class="form-input" required>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" data-placeholder-key="text-form-name-placeholder" class="form-input" required>
                 </div>
 
                 <div class="form-group">
                     <label for="email" class="form-label"><span class="text-form-email">EMAIL</span> <span class="required">*</span></label>
-                    <input type="email" id="email" name="email" placeholder="votre.email@example.com" class="form-input" required>
+                    <input type="email" id="email" name="email" placeholder="votre.email@example.com" data-placeholder-key="text-form-email-placeholder" class="form-input" required>
                 </div>
 
                 <div class="form-group">
                     <label for="subject" class="form-label"><span class="text-form-subject">SUJET</span></label>
-                    <input type="text" id="subject" name="subject" placeholder="De quoi s'agit-il ?" class="form-input">
+                    <input type="text" id="subject" name="subject" placeholder="De quoi s'agit-il ?" data-placeholder-key="text-form-subject-placeholder" class="form-input">
                 </div>
 
                 <div class="form-group">
                     <label for="message" class="form-label"><span class="text-form-message">MESSAGE</span> <span class="required">*</span></label>
-                    <textarea id="message" name="message" placeholder="Parlez-moi de votre projet..." class="form-textarea" rows="6"></textarea>
+                    <textarea id="message" name="message" placeholder="Parlez-moi de votre projet..." data-placeholder-key="text-form-message-placeholder" class="form-textarea" rows="6"></textarea>
                     <div class="char-count"><span id="char-count">0</span>/1000</div>
                 </div>
 
@@ -1439,7 +1504,8 @@
             </form>
 
             <div class="contact-actions">
-                <a href="https://drive.google.com/uc?export=download&id=1gw_to2ZWTvvnDrpO3qdEvrWFMWLGl6O3" download="BOINET-Thomas_CV_FR.pdf" class="action-btn action-download">
+                <a id="cv-download-link"
+href="https://drive.google.com/uc?export=download&id=1gw_to2ZWTvvnDrpO3qdEvrWFMWLGl6O3" download="BOINET-Thomas_CV_FR.pdf" class="action-btn action-download">
                     <span class="text-contact-download">Télécharger le CV</span>
                 </a>
                 <button type="button" class="action-btn action-copy" onclick="copyEmail()">
@@ -1590,7 +1656,29 @@
 "text-tag-tool": "Tool",
 "text-tag-blueprint": "Blueprint",
 "text-tag-voicechat": "Voice Chat",
-"text-tag-multiplayer": "Multiplayer Online"
+"text-tag-multiplayer": "Multiplayer Online",
+"text-technologies-used": "Technologies Utilisées",
+"text-detailed-description": "Description Détaillée", 
+"text-links": "Liens",
+"text-skills-title": "Compétences",
+"text-algorithms-mastered": "Algorithmes maîtrisés",
+"text-syracuse": "Conjecture de Syracuse",
+"text-bubble-sort": "Bubble Sort",
+"text-a-star": "A*",
+"text-dijkstra": "Dijkstra",
+"text-capabilities": "Ce que je sais faire",
+"text-multiplayer-local": "Jeu multijoueur local",
+"text-multiplayer-network": "Jeu multijoueur réseau",
+"text-ai": "IA",
+"text-behavior-tree": "Behavior Tree",
+"text-state-tree": "State Tree",
+"text-proximity-chat": "Chat de proximité",
+"text-vehicle": "Véhicule",
+"text-tools": "Outils",
+"text-commonui": "CommonUI",
+"text-gas": "Gameplay Abilities System",
+"text-procedural": "Génération procédurale"
+
 
         },
         en: {
@@ -1723,20 +1811,42 @@
 "text-tag-tool": "Tool",
 "text-tag-blueprint": "Blueprint",
 "text-tag-voicechat": "Voice Chat",
-"text-tag-multiplayer": "Multiplayer Online"
+"text-tag-multiplayer": "Multiplayer Online",
+"text-technologies-used": "Technologies Used",
+"text-detailed-description": "Detailed Description",
+"text-links": "Links",
+"text-skills-title": "Skills",
+"text-algorithms-mastered": "Mastered Algorithms",
+"text-syracuse": "Syracuse Conjecture",
+"text-bubble-sort": "Bubble Sort",
+"text-a-star": "A*",
+"text-dijkstra": "Dijkstra",
+"text-capabilities": "What I can do",
+"text-multiplayer-local": "Local multiplayer game",
+"text-multiplayer-network": "Network multiplayer game",
+"text-ai": "AI",
+"text-behavior-tree": "Behavior Tree",
+"text-state-tree": "State Tree",
+"text-proximity-chat": "Proximity chat",
+"text-vehicle": "Vehicle",
+"text-tools": "Tools",
+"text-commonui": "CommonUI",
+"text-gas": "Gameplay Ability System",
+"text-procedural": "Procedural generation",
 
 
         }
     };
 
-    let currentPage = 'home';
+   let currentPage = 'home';
 
-    function initLanguage() {
-        const savedLang = localStorage.getItem('language') || 'fr';
-        setLanguage(savedLang);
-    }
+function initLanguage() {
+    const savedLang = localStorage.getItem('language') || 'fr';
+    setLanguage(savedLang);
+updateCVDownloadLink(); 
+}
 
-    function setLanguage(lang) {
+function setLanguage(lang) {
     localStorage.setItem('language', lang);
     document.documentElement.lang = lang;
     
@@ -1758,7 +1868,7 @@
     elements.forEach(element => {
         const classes = element.className.split(' ');
         classes.forEach(className => {
-            if (className.startsWith('text-') && translations[lang][className]) {
+            if (className.startsWith('text-') && translations[lang] && translations[lang][className]) {
                 element.textContent = translations[lang][className];
             }
         });
@@ -1772,14 +1882,42 @@
             input.placeholder = translations[lang][key];
         }
     });
+
+    // ✅ AJOUT : Met à jour les boutons CV
+    updateCVDownloadLink();
+}  // ← ACCOLADE FERMANT CORRIGÉE
+
+function updateCVDownloadLink() {
+    const lang = localStorage.getItem('language') || 'fr';
+    const cvLink = document.getElementById('cv-download-link');
+    const navCVLink = document.querySelector('a[href*="drive.google.com"]'); // Ton lien nav actuel
+    
+    if (cvLink) {
+        cvLink.href = lang === 'en' ? 
+            'https://drive.google.com/uc?export=download&id=1RGO_5l2s3UbNCDs8bUzUJOx2bo8dgvcR' :  // CV EN
+            'https://drive.google.com/uc?export=download&id=1gw_to2ZWTvvnDrpO3qdEvrWFMWLGl6O3';  // CV FR
+        cvLink.download = lang === 'en' ? 'BOINET_Thomas_CV_EN.pdf' : 'BOINET-Thomas_CV_FR.pdf';
+    }
+    
+    if (navCVLink) {
+        navCVLink.href = lang === 'en' ? 
+            'https://drive.google.com/uc?export=download&id=1RGO_5l2s3UbNCDs8bUzUJOx2bo8dgvcR' :
+            'https://drive.google.com/uc?export=download&id=1gw_to2ZWTvvnDrpO3qdEvrWFMWLGl6O3';
+        navCVLink.download = lang === 'en' ? 'BOINET_Thomas_CV_EN.pdf' : 'BOINET-Thomas_CV_FR.pdf';
+    }
+}
+function toggleLanguage() {
+    const currentLang = localStorage.getItem('language') || 'fr';
+    const newLang = currentLang === 'fr' ? 'en' : 'fr';
+    setLanguage(newLang);
+    updateCVDownloadLink();
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    initLanguage();
+    updateCVDownloadLink(); // Ajoute ça
+});
 
-    function toggleLanguage() {
-        const currentLang = localStorage.getItem('language') || 'fr';
-        const newLang = currentLang === 'fr' ? 'en' : 'fr';
-        setLanguage(newLang);
-    }
 
     function navigateTo(page) {
         // Hide current page
@@ -1896,7 +2034,6 @@
     }
 
     // Initialize
-    window.addEventListener('DOMContentLoaded', initLanguage);
     document.getElementById('page-home').classList.add('active');
 </script>
 </body>
