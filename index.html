@@ -1166,7 +1166,11 @@
 
                      <!-- Project 3 -->
                     <div class="project-card" onclick="navigateTo('project3')">
-                        <div class="project-image">🌐</div>
+                        <div class="project-image" style="line-height: 0; padding: 0;">
+    <img src="assets/images/projects/twoagainsttime/twoagainsttimethumbnail.png" 
+         alt="TwoAgainstTime" 
+         style="width: 100%; height: 100%; object-fit: cover; display: block; line-height: 0; margin: 0;">
+</div>
                         <div class="project-content">
                             <h3><span class="text-project-3-title">TwoAgainstTime</span></h3>
                             <p><span class="text-project-3-desc">Jeu multijoueur coop en ligne avec chat vocal de proximité</span></p>
@@ -1450,15 +1454,25 @@
 <!-- Project 3 Detail Page -->
 <div id="page-project3" class="page">
     <section class="container page-section">
-        <button class="btn btn-secondary" onclick="navigateTo('projects')" style="margin-bottom: 2rem;">← <span class="text-back-to-projects">Retour aux Projets</span></button>
+        <button class="btn btn-secondary" onclick="navigateTo('projects')" style="margin-bottom: 2rem;">
+            ← <span class="text-back-to-projects">Retour aux Projets</span>
+        </button>
         <h2><span class="text-twoagainsttime-title">TwoAgainstTime</span></h2>
         <div style="max-width: 900px; margin: 0 auto;">
-            <div class="project-image" style="height: 400px; margin-bottom: 2rem; border-radius: 0.6rem;">🌐</div>
-            <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 0.6rem; padding: 2rem; margin-bottom: 2rem;">
+            <!-- Image en haut -->
+            <div class="project-image" style="height: 400px; margin-bottom: 2rem; border-radius: 0.6rem; line-height: 0;">
+                <img src="assets/images/projects/twoagainsttime/twoagainsttimethumbnail.png" 
+                     alt="TwoAgainstTime" 
+                     style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.6rem; display: block; line-height: 0;">
+            </div>
+
+            <!-- Contenu en un seul bloc -->
+            <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 0.6rem; padding: 2rem;">
                 <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.5rem;"><span class="text-detailed-description">Description Détaillée</span></h3>
                 <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
                     <span class="text-twoagainsttime-description">Jeu multijoueur coop en ligne avec chat vocal de proximité. Ce projet intègre des systèmes avancés de networking pour la synchronisation en temps réel et une implémentation complète du voice chat spatial pour une immersion maximale.</span>
                 </p>
+                
                 <h3 style="color: var(--primary); margin-top: 2rem; margin-bottom: 1rem;"><span class="text-technologies-used">Technologies Utilisées</span></h3>
                 <div class="project-tags" style="margin-bottom: 2rem;">
                     <span class="tag"><span class="text-tag-ue5">Unreal Engine 5</span></span>
@@ -1467,6 +1481,7 @@
                     <span class="tag"><span class="text-tag-voicechat">Voice Chat</span></span>
                     <span class="tag"><span class="text-tag-multiplayer">Multiplayer Online</span></span>
                 </div>
+                
                 <h3 style="color: var(--primary); margin-bottom: 1rem;"><span class="text-links">Liens</span></h3>
                 <div class="project-links">
                     <a href="https://github.com/Cookiecrafty/CoopASG2" target="_blank">GitHub</a>
@@ -1475,7 +1490,6 @@
         </div>
     </section>
 </div>
-
       <!-- Contact Page -->
 <div id="page-contact" class="page">
     <section class="container page-section">
