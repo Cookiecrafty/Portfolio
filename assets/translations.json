@@ -1,0 +1,274 @@
+{
+  "fr": {
+    "nav": {
+      "home": "Accueil",
+      "about": "À Propos",
+      "projects": "Projets",
+      "cv": "CV",
+      "contact": "Contact"
+    },
+    "hero": {
+      "subtitle": "Gameplay Programmer",
+      "description": "Spécialisé en systèmes de gameplay avancés, mécaniques interactives et architecture réseau. Expertise en Unreal Engine 5 et Unity avec focus sur C++ et performance.",
+      "cta_contact": "Me Contacter",
+      "cta_projects": "Voir mes projets"
+    },
+    "about": {
+      "title": "À Propos",
+      "job_title": "Game Developer",
+      "bio_p1": "Salut ! Je suis Thomas, Game Developer junior spécialisé en programmation et conception de jeux vidéo.",
+      "bio_p2": "Je suis un Game Developer capable de créer des jeux vidéo complets sur Unreal Engine, que ce soit du solo, du multiplayer local ou en ligne, ou encore créer un jeu mobile.",
+      "bio_p3": "Avec un parcours en Game Developer, j'adore créer des mécaniques de gameplay innovantes et engageantes, car j'adore donner vie aux créations des artistes et transformer leurs visions en expériences de jeu captivantes.",
+      "bio_p4": "Mon objectif est de développer des systèmes robustes et performants qui permettent aux joueurs de vivre des aventures inoubliables, tout en travaillant en étroite collaboration avec les équipes créatives."
+    },
+    "skills": {
+      "title": "Compétences",
+      "engines": "Moteur de Jeu",
+      "languages": "Language de Programmation",
+      "algorithms": "Algorithmes maîtrisés",
+      "capabilities": "Ce que je sais faire",
+      "versionControl": "Version Control",
+      "artSoftware": "Logiciel Artistique",
+      "soundSoftware": "Logiciel de Son",
+      "algorithmsList": {
+        "syracuse": "Conjecture de Syracuse",
+        "bubbleSort": "Bubble Sort",
+        "aStar": "A*",
+        "dijkstra": "Dijkstra"
+      },
+      "capabilitiesList": {
+        "multiplayerLocal": "Jeu multijoueur local",
+        "multiplayerNetwork": "Jeu multijoueur réseau",
+        "ai": "IA",
+        "behaviorTree": "Behavior Tree",
+        "stateTree": "State Tree",
+        "proximityChat": "Chat de proximité",
+        "vehicle": "Véhicule",
+        "tools": "Outils",
+        "commonui": "CommonUI",
+        "gas": "Gameplay Abilities System",
+        "procedural": "Génération procédurale"
+      }
+    },
+    "education": {
+      "title": "Formation",
+      "degree1": "Bachelor Développeur Jeux Vidéo",
+      "degree1_school": "STUDIO MERCIER – Béziers",
+      "degree1_spec": "Spécialisation : Programmation",
+      "degree1_year": "2023",
+      "degree2": "BAC avec mention",
+      "degree2_school": "École Victor Hugo – Colomiers",
+      "degree2_spec": "Spécialisation Maths/Physique",
+      "degree2_year": "2023"
+    },
+    "gameJams": {
+      "title": "Game Jam",
+      "ggj": "Global Game Jam",
+      "ggj_years": "2024, 2025",
+      "smgj": "Studio M Game Jam",
+      "smgj_years": "2024, 2025",
+      "gmtkgj": "GMTK Game Jam",
+      "gmtkgj_years": "2025"
+    },
+    "projects": {
+      "title": "Mes Projets",
+      "back": "← Retour aux Projets",
+      "roguelite": {
+        "title": "RogueLiteProject",
+        "description": "Roguelite avec génération procédurale de salle et des IA",
+        "intro": "Ce jeu est un twin stick shooter avec de la génération procédurale de salle et avec des IA faites avec le behavior tree. Ce projet a été réalisé en 4 semaines durant ma deuxième année à l'école Studio Mercier.",
+        "roomGenTitle": "Système de Génération de Salle",
+        "roomGenDesc": "Au début de chaque partie, une suite de salles est générée. La génération procédurale est gérée par un système de seed, ce qui permet de trouver facilement des bugs si l'on découvre une seed avec un agencement de salle incohérent. À chaque génération de salle, on vérifie à l'aide d'une boîte de collision jaune si la nouvelle salle entre en collision avec une autre salle déjà placée. Si ce n'est pas le cas, on continue la génération. Si une collision est détectée, on supprime la salle et on la place vers une autre sortie disponible."
+      },
+      "importtool": {
+        "title": "ImportTool",
+        "description": "Système d'importation et de renommage automatisé des assets via un pipeline optimisé",
+        "intro": "Ce plugin d'import permet de renommer automatiquement les assets qui sont importés dans Unreal Engine avec une limite de polygone pour éviter de charger des assets trop volumineux. Il a été réalisé en 1 mois au début de ma troisième année à l'école Studio Mercier pour être utilisé pour le projet de 3ème année sur lequel je travaille actuellement."
+      },
+      "twoagainsttime": {
+        "title": "TwoAgainstTime",
+        "description": "Jeu multijoueur coop en ligne avec chat vocal de proximité",
+        "detailedDesc": "Jeu multijoueur coop en ligne avec chat vocal de proximité. Ce projet intègre des systèmes avancés de networking pour la synchronisation en temps réel et une implémentation complète du voice chat spatial pour une immersion maximale."
+      },
+      "marvelrivals": {
+        "title": "ReproMarvelRivals",
+        "description": "Reproduction du personnage Overlord de Marvel Rivals sur Unreal Engine.",
+        "intro": "Reproduction du personnage Overlord de Marvel Rivals en Unreal Engine 5. Focus sur les mécaniques spécifiques : Shoot, Dash, Jet-Pack, Auto-Aim et Ultimate. Projet technique démontrant la maîtrise des systèmes de héros complexes."
+      }
+    },
+    "tags": {
+      "ue5": "Unreal Engine 5",
+      "blueprint": "Blueprint",
+      "gameplay": "Gameplay",
+      "ai": "IA",
+      "procedural": "Génération Procédurale",
+      "cpp": "C++",
+      "pipeline": "Pipeline",
+      "tool": "Tool",
+      "voicechat": "Voice Chat",
+      "multiplayer": "Multiplayer Online"
+    },
+    "contact": {
+      "title": "Me Contacter",
+      "message": "Construisons quelque chose d'incroyable ensemble.",
+      "notice": "N'hésitez pas à me contacter ! Je suis actuellement en 3ème année de Game Developer à l'école Studio Mercier, mais disponible pour de nouvelles opportunités à partir du 1er Avril 2026 !",
+      "form": {
+        "name": "NOM",
+        "name_placeholder": "Votre nom",
+        "email": "EMAIL",
+        "email_placeholder": "votre.email@example.com",
+        "subject": "SUJET",
+        "subject_placeholder": "De quoi s'agit-il ?",
+        "message": "MESSAGE",
+        "message_placeholder": "Parlez-moi de votre projet...",
+        "submit": "ENVOYER LE MESSAGE"
+      },
+      "actions": {
+        "download": "Télécharger le CV",
+        "copy": "Copier l'Email"
+      }
+    },
+    "common": {
+      "intro": "Introduction",
+      "technologies": "Technologies Utilisées",
+      "links": "Liens",
+      "github": "GitHub"
+    }
+  },
+  "en": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "cv": "Resume",
+      "contact": "Contact"
+    },
+    "hero": {
+      "subtitle": "Gameplay Programmer",
+      "description": "Specialized in advanced gameplay systems, interactive mechanics and network architecture. Expertise in Unreal Engine 5 and Unity with focus on C++ and performance.",
+      "cta_contact": "Contact Me",
+      "cta_projects": "View my projects"
+    },
+    "about": {
+      "title": "About",
+      "job_title": "Game Developer",
+      "bio_p1": "Hi! I'm Thomas, a junior Game Developer specialized in game programming and design.",
+      "bio_p2": "I'm a Game Developer capable of creating complete video games in Unreal Engine, whether solo, local multiplayer or online, or even creating a mobile game.",
+      "bio_p3": "With a background in Game Development, I love creating innovative and engaging gameplay mechanics because I love bringing artists' creations to life and transforming their visions into captivating gaming experiences.",
+      "bio_p4": "My goal is to develop robust and performant systems that allow players to experience unforgettable adventures while working closely with creative teams."
+    },
+    "skills": {
+      "title": "Skills",
+      "engines": "Game Engine",
+      "languages": "Programming Language",
+      "algorithms": "Mastered Algorithms",
+      "capabilities": "What I can do",
+      "versionControl": "Version Control",
+      "artSoftware": "Art Software",
+      "soundSoftware": "Sound Software",
+      "algorithmsList": {
+        "syracuse": "Syracuse Conjecture",
+        "bubbleSort": "Bubble Sort",
+        "aStar": "A*",
+        "dijkstra": "Dijkstra"
+      },
+      "capabilitiesList": {
+        "multiplayerLocal": "Local multiplayer game",
+        "multiplayerNetwork": "Network multiplayer game",
+        "ai": "AI",
+        "behaviorTree": "Behavior Tree",
+        "stateTree": "State Tree",
+        "proximityChat": "Proximity Chat",
+        "vehicle": "Vehicle",
+        "tools": "Tools",
+        "commonui": "CommonUI",
+        "gas": "Gameplay Abilities System",
+        "procedural": "Procedural Generation"
+      }
+    },
+    "education": {
+      "title": "Education",
+      "degree1": "Bachelor Game Developer",
+      "degree1_school": "STUDIO MERCIER – Béziers",
+      "degree1_spec": "Specialization: Programming",
+      "degree1_year": "2023",
+      "degree2": "High School Diploma with honors",
+      "degree2_school": "École Victor Hugo – Colomiers",
+      "degree2_spec": "Specialization Math/Physics",
+      "degree2_year": "2023"
+    },
+    "gameJams": {
+      "title": "Game Jams",
+      "ggj": "Global Game Jam",
+      "ggj_years": "2024, 2025",
+      "smgj": "Studio M Game Jam",
+      "smgj_years": "2024, 2025",
+      "gmtkgj": "GMTK Game Jam",
+      "gmtkgj_years": "2025"
+    },
+    "projects": {
+      "title": "My Projects",
+      "back": "← Back to Projects",
+      "roguelite": {
+        "title": "RogueLiteProject",
+        "description": "Roguelike with procedural room generation and AI",
+        "intro": "This game is a twin stick shooter with procedural room generation and AI made with behavior trees. This project was completed in 4 weeks during my second year at Studio Mercier.",
+        "roomGenTitle": "Room Generation System",
+        "roomGenDesc": "At the start of each game, a series of rooms is generated. Procedural generation is managed by a seed system, which makes it easy to find bugs if a seed with inconsistent room arrangement is discovered. For each room generation, we check using a yellow collision box whether the new room collides with another already placed room. If not, we continue generation. If a collision is detected, we delete the room and place it at another available exit."
+      },
+      "importtool": {
+        "title": "ImportTool",
+        "description": "Automated asset import and renaming system via optimized pipeline",
+        "intro": "This import plugin allows automatic renaming of assets imported into Unreal Engine with a polygon limit to avoid loading overly large assets. It was completed in 1 month at the beginning of my third year at Studio Mercier to be used for the 3rd year project I'm currently working on."
+      },
+      "twoagainsttime": {
+        "title": "TwoAgainstTime",
+        "description": "Co-op multiplayer game online with proximity voice chat",
+        "detailedDesc": "Online co-op multiplayer game with proximity voice chat. This project integrates advanced networking systems for real-time synchronization and complete spatial voice chat implementation for maximum immersion."
+      },
+      "marvelrivals": {
+        "title": "ReproMarvelRivals",
+        "description": "Reproduction of the Overlord character from Marvel Rivals in Unreal Engine.",
+        "intro": "Reproduction of the Overlord character from Marvel Rivals in Unreal Engine 5. Focus on specific mechanics: Shoot, Dash, Jet-Pack, Auto-Aim and Ultimate. Technical project demonstrating mastery of complex hero systems."
+      }
+    },
+    "tags": {
+      "ue5": "Unreal Engine 5",
+      "blueprint": "Blueprint",
+      "gameplay": "Gameplay",
+      "ai": "AI",
+      "procedural": "Procedural Generation",
+      "cpp": "C++",
+      "pipeline": "Pipeline",
+      "tool": "Tool",
+      "voicechat": "Voice Chat",
+      "multiplayer": "Multiplayer Online"
+    },
+    "contact": {
+      "title": "Contact Me",
+      "message": "Let's build something amazing together.",
+      "notice": "Don't hesitate to contact me! I'm currently in my 3rd year of Game Developer at Studio Mercier, but available for new opportunities starting April 1st, 2026!",
+      "form": {
+        "name": "NAME",
+        "name_placeholder": "Your name",
+        "email": "EMAIL",
+        "email_placeholder": "your.email@example.com",
+        "subject": "SUBJECT",
+        "subject_placeholder": "What's this about?",
+        "message": "MESSAGE",
+        "message_placeholder": "Tell me about your project...",
+        "submit": "SEND MESSAGE"
+      },
+      "actions": {
+        "download": "Download Resume",
+        "copy": "Copy Email"
+      }
+    },
+    "common": {
+      "intro": "Introduction",
+      "technologies": "Technologies Used",
+      "links": "Links",
+      "github": "GitHub"
+    }
+  }
+}
