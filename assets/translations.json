@@ -134,7 +134,17 @@
       "twoagainsttime": {
         "title": "TwoAgainstTime",
         "description": "Jeu multijoueur coop en ligne avec chat vocal de proximité",
-        "intro": "Jeu multijoueur coop en ligne avec chat vocal de proximité. Ce projet intègre des systèmes avancés de networking pour la synchronisation en temps réel et une implémentation complète du voice chat spatial pour une immersion maximale."
+        "intro": "Jeu multijoueur coop en ligne développé en équipe de 6 personnes (3 Game Designers et 3 Game Developers). J'ai contribué en tant que Game Developer au développement du système de host et join, du chat vocal de proximité, du système d'ouverture de porte via mots de passe prédéfinis, des énigmes interactives via widgets et du système de salle des caméras avec vision nocturne. Ce projet intègre des systèmes avancés de networking pour la synchronisation en temps réel et une implémentation complète du voice chat spatial pour une immersion maximale.",
+        "hostJoinTitle": "Système de Host et Join",
+        "hostJoinDesc": "Système complet permettant aux joueurs de créer une partie en tant qu'hôte ou de rejoindre une partie existante. Ce système gère la synchronisation réseau entre les joueurs et assure une connexion stable pour l'expérience multijoueur.",
+        "voiceChatTitle": "Chat Vocal de Proximité",
+        "voiceChatDesc": "Implémentation d'un système de chat vocal spatial qui permet aux joueurs de communiquer uniquement avec les joueurs à proximité. Ce système crée une immersion accrue en limitant la portée audio en fonction de la distance entre les personnages.",
+        "doorPasswordTitle": "Système d'Ouverture de Porte avec Mots de Passe",
+        "doorPasswordDesc": "Système d'énigmes interactif permettant aux joueurs d'ouvrir des portes en utilisant des mots de passe prédéfinis. Les joueurs doivent découvrir et entrer les codes corrects pour progresser dans le jeu.",
+        "riddlesTitle": "Énigmes et Widgets Interactifs",
+        "riddlesDesc": "Collection d'énigmes diverses intégrées au jeu via des widgets interactifs. Ces énigmes offrent des défis variés et contribuent à la progression du joueur à travers les différentes zones du jeu.",
+        "cameraRoomTitle": "Salle des Caméras et Vision Nocturne",
+        "cameraRoomDesc": "Système de salle des caméras permettant aux joueurs de basculer entre différents points de vue caméra. Incluant une fonctionnalité de vision nocturne pour explorer les zones sombres et résoudre des énigmes cachées."
       },
       "marvelrivals": {
         "title": "ReproMarvelRivals",
@@ -321,7 +331,17 @@
       "twoagainsttime": {
         "title": "TwoAgainstTime",
         "description": "Co-op multiplayer game online with proximity voice chat",
-        "intro": "Online co-op multiplayer game with proximity voice chat. This project integrates advanced networking systems for real-time synchronization and complete spatial voice chat implementation for maximum immersion."
+        "intro": "Online co-op multiplayer game developed by a team of 6 people (3 Game Designers and 3 Game Developers). I contributed as a Game Developer to the development of the host and join system, proximity voice chat, password-based door opening system, interactive riddles via widgets, and the camera room system with night vision. This project integrates advanced networking systems for real-time synchronization and complete spatial voice chat implementation for maximum immersion.",
+        "hostJoinTitle": "Host and Join System",
+        "hostJoinDesc": "Complete system allowing players to create a game as a host or join an existing game. This system handles network synchronization between players and ensures a stable connection for the multiplayer experience.",
+        "voiceChatTitle": "Proximity Voice Chat",
+        "voiceChatDesc": "Implementation of a spatial voice chat system that allows players to communicate only with nearby players. This system creates increased immersion by limiting audio range based on distance between characters.",
+        "doorPasswordTitle": "Password Door System",
+        "doorPasswordDesc": "Interactive puzzle system allowing players to open doors using predefined passwords. Players must discover and enter the correct codes to progress through the game.",
+        "riddlesTitle": "Interactive Riddles and Widgets",
+        "riddlesDesc": "Collection of various riddles integrated into the game through interactive widgets. These riddles offer varied challenges and contribute to player progression through different game areas.",
+        "cameraRoomTitle": "Camera Room and Night Vision",
+        "cameraRoomDesc": "Camera room system allowing players to switch between different camera viewpoints. Including a night vision feature to explore dark areas and solve hidden puzzles."
       },
       "marvelrivals": {
         "title": "ReproMarvelRivals",
