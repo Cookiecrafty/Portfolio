@@ -974,128 +974,100 @@
 <!-- Project 1 Detail Page -->
 <div id="page-project1" class="page">
     <section class="container page-section">
-        <button class="btn btn-secondary" onclick="navigateTo('projects')" style="margin-bottom: 2rem;">← <span class="text-back-to-projects">Retour aux Projets</span></button>
-        <h2><span class="text-roguelite-title">RogueLiteProject</span></h2>
+        <button class="btn btn-secondary" onclick="navigateTo('projects')" style="margin-bottom: 2rem;"><span data-i18n="projects.back"></span></button>
+        <h2><span data-i18n="projects.roguelite.title"></span></h2>
         <div style="max-width: 900px; margin: 0 auto;">
             <div class="project-image" style="height: 400px; margin-bottom: 2rem; border-radius: 0.6rem;">
                 <img src="assets/images/projects/rogue-lite/roguelitethumbnail.png" alt="RogueLiteProject" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.6rem;">
             </div>
             <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 0.6rem; padding: 2rem; margin-bottom: 2rem;">
-                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;"><span class="text-intro-title">Introduction</span></h3>
-                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 2rem;">
-                    <span class="text-roguelite-intro">Ce jeu est un twin stick shooter avec de la génération procédurale de salle et avec des IA faites avec le behavior tree. Ce projet a été réalisé en 4 semaines durant ma deuxième année à l'école Studio Mercier.</span>
-                </p>
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;" data-i18n="common.intro"></h3>
+                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 2rem;" data-i18n="projects.roguelite.intro"></p>
                 
                 <!-- Génération Procédurale -->
-                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;"><span class="text-room-generation-title">Système de Génération de Salle</span></h3>
-                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-                    <span class="text-room-generation-desc">Au début de chaque partie, une suite de salles est générée. La génération procédurale est gérée par un système de seed, ce qui permet de trouver facilement des bugs si l'on découvre une seed avec un agencement de salle incohérent. À chaque génération de salle, on vérifie à l'aide d'une boîte de collision jaune si la nouvelle salle entre en collision avec une autre salle déjà placée. Si ce n'est pas le cas, on continue la génération. Si une collision est détectée, on supprime la salle et on la place vers une autre sortie disponible.</span>
-                </p>
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;" data-i18n="projects.roguelite.roomGenTitle"></h3>
+                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;" data-i18n="projects.roguelite.roomGenDesc"></p>
                 <img src="assets/images/projects/rogue-lite/roguelitegifproceduralgeneration.gif" alt="Génération Procédurale" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;">
                 <img src="assets/images/projects/rogue-lite/imagesalleempty.png" alt="Salle Vide" style="width: 100%; border-radius: 0.4rem; margin-bottom: 2rem;">
 
                 <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
 
-                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;"><span class="text-room-types-title">Types de Salles</span></h3>
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;" data-i18n="projects.roguelite.roomTypesTitle"></h3>
 
                 <div style="margin-bottom: 2rem;">
-                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-starter-room-title">Salle de Départ</span></h4>
-                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-                        <span class="text-starter-room-desc">La salle de départ détermine où commence la génération du donjon et scelle les 3 autres sorties. Chaque sortie disponible est représentée par une flèche verte, comme montré dans l'image ci-dessous.</span>
-                    </p>
+                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;" data-i18n="projects.roguelite.starterRoomTitle"></h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;" data-i18n="projects.roguelite.starterRoomDesc"></p>
                     <img src="assets/images/projects/rogue-lite/imagesallestarter.png" alt="Salle de Départ" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;">
                 </div>
 
                 <div style="margin-bottom: 2rem;">
-                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-corridor-title">Couloirs</span></h4>
-                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-                        <span class="text-corridor-desc">Entre chaque salle, il y a des couloirs qui servent de zones de passage et de repos pour le joueur, car la majorité des salles contiennent des pièges. Il existe un seul modèle de couloir dans le donjon.</span>
-                    </p>
+                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;" data-i18n="projects.roguelite.corridorTitle"></h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;" data-i18n="projects.roguelite.corridorDesc"></p>
                     <img src="assets/images/projects/rogue-lite/imagecouloir.png" alt="Couloir" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;">
                 </div>
 
                 <div style="margin-bottom: 2rem;">
-                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-main-rooms-title">Salles Principales</span></h4>
-                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-                        <span class="text-main-rooms-desc">Après chaque couloir, une nouvelle salle avec de nouvelles possibilités de sorties apparaît. Les sorties disponibles sont représentées par des flèches vertes. À chaque génération, le système récupère toutes les sorties disponibles et en choisit une au hasard. Cela permet une génération de donjon imprévisible, pouvant être linéaire ou se disperser dans plusieurs directions. Chaque salle contient une boîte de collision rouge qui, lorsque le joueur la traverse, ferme les portes et déclenche l'apparition de vagues d'ennemis. Le nombre de vagues et les types d'ennemis sont aléatoires, gérés par le système de seed pour garantir la reproductibilité.</span>
-                    </p>
+                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;" data-i18n="projects.roguelite.mainRoomsTitle"></h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;" data-i18n="projects.roguelite.mainRoomsDesc"></p>
                     <img src="assets/images/projects/rogue-lite/imagesalle.png" alt="Salle Principale" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;">
                 </div>
 
                 <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
 
-                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;"><span class="text-special-rooms-title">Salles Spéciales</span></h3>
-                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 2rem;">
-                    <span class="text-special-rooms-intro">À chaque génération de donjon, une salle magasin et une salle de fin apparaissent obligatoirement.</span>
-                </p>
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;" data-i18n="projects.roguelite.specialRoomsTitle"></h3>
+                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 2rem;" data-i18n="projects.roguelite.specialRoomsIntro"></p>
 
                 <div style="margin-bottom: 2rem;">
-                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-shop-title">Salle Magasin</span></h4>
-                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-                        <span class="text-shop-desc">La salle magasin est un lieu où le joueur peut acheter de nouvelles armes en utilisant l'or collecté. Deux armes sont disponibles à l'achat : un fusil à pompe et un pistolet laser.</span>
-                    </p>
+                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;" data-i18n="projects.roguelite.shopTitle"></h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;" data-i18n="projects.roguelite.shopDesc"></p>
                     <img src="assets/images/projects/rogue-lite/imagesalleshop.png" alt="Salle Magasin" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1rem;">
                     <video src="assets/images/projects/rogue-lite/salleshop.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;"></video>
                 </div>
 
                 <div style="margin-bottom: 2rem;">
-                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-end-rooms-title">Salles de Fin</span></h4>
-                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1.5rem;">
-                        <span class="text-end-rooms-intro">Il existe deux types de salle de fin de donjon :</span>
-                    </p>
+                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;" data-i18n="projects.roguelite.endRoomsTitle"></h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1.5rem;" data-i18n="projects.roguelite.endRoomsIntro"></p>
                     
                     <div style="margin-left: 1rem; margin-bottom: 1.5rem;">
-                        <h5 style="color: var(--primary); margin-bottom: 0.8rem; font-size: 1.1rem;"><span class="text-portal-room-title">Salle Portail</span></h5>
-                        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-                            <span class="text-portal-room-desc">La salle portail téléporte le joueur et génère une nouvelle suite de salles, permettant une progression continue du donjon.</span>
-                        </p>
+                        <h5 style="color: var(--primary); margin-bottom: 0.8rem; font-size: 1.1rem;" data-i18n="projects.roguelite.portalRoomTitle"></h5>
+                        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;" data-i18n="projects.roguelite.portalRoomDesc"></p>
                         <img src="assets/images/projects/rogue-lite/imagesalleportail.png" alt="Salle Portail" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;">
                     </div>
 
                     <div style="margin-left: 1rem;">
-                        <h5 style="color: var(--primary); margin-bottom: 0.8rem; font-size: 1.1rem;"><span class="text-boss-room-title">Salle de Boss</span></h5>
-                        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-                            <span class="text-boss-room-desc">La salle de boss est la dernière salle du donjon et représente le défi final de la partie.</span>
-                        </p>
+                        <h5 style="color: var(--primary); margin-bottom: 0.8rem; font-size: 1.1rem;" data-i18n="projects.roguelite.bossRoomTitle"></h5>
+                        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;" data-i18n="projects.roguelite.bossRoomDesc"></p>
                         <img src="assets/images/projects/rogue-lite/imagesalleboss.png" alt="Salle de Boss" style="width: 100%; border-radius: 0.4rem;">
                     </div>
                 </div>
 
                 <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
 
-                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;"><span class="text-weapons-title">Les Différentes Armes du Jeu</span></h3>
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;" data-i18n="projects.roguelite.weaponsTitle"></h3>
 
                 <div style="margin-bottom: 2rem;">
-                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-gun-title">Mitraillette</span></h4>
-                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-                        <span class="text-gun-desc">La mitraillette est l'arme de base du joueur, permettant de tirer en rafale continue.</span>
-                    </p>
+                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;" data-i18n="projects.roguelite.gunTitle"></h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;" data-i18n="projects.roguelite.gunDesc"></p>
                     <video src="assets/images/projects/rogue-lite/mitraillette.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;"></video>
                 </div>
 
                 <div style="margin-bottom: 2rem;">
-                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-shotgun-title">Fusil à Pompe</span></h4>
-                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-                        <span class="text-shotgun-desc">Le fusil à pompe tire une salve de 5 balles à chaque tir, mais avec une cadence de tir plus lente. Il peut être acheté dans le magasin pour 50 or, l'or étant obtenu en tuant des ennemis.</span>
-                    </p>
+                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;" data-i18n="projects.roguelite.shotgunTitle"></h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;" data-i18n="projects.roguelite.shotgunDesc"></p>
                     <video src="assets/images/projects/rogue-lite/fusilapompe.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;"></video>
                 </div>
 
                 <div style="margin-bottom: 2rem;">
-                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-laser-title">Pistolet Laser</span></h4>
-                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-                        <span class="text-laser-desc">Le pistolet laser tue tout ce qui se trouve sur sa trajectoire et traverse les ennemis, permettant de tuer plusieurs adversaires en un seul tir. Il a un délai de tir plus long et coûte 100 or dans le magasin. Cependant, cette arme ne peut être débloquée que grâce aux gemmes, une monnaie premium obtenue en accomplissant le lobby du jeu. Les gemmes peuvent uniquement être gagnées en terminant une partie.</span>
-                    </p>
+                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;" data-i18n="projects.roguelite.laserTitle"></h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;" data-i18n="projects.roguelite.laserDesc"></p>
                     <video src="assets/images/projects/rogue-lite/pistoletlaser.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 1rem;"></video>
                     <img src="assets/images/projects/rogue-lite/pistoletlasercraft.gif" alt="Craft Pistolet Laser" style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;">
                 </div>
 
                 <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
 
-                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;"><span class="text-enemies-title">Les Ennemis</span></h3>
-                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 2rem;">
-                    <span class="text-enemies-intro">Il y a trois types d'ennemis dans le jeu : le fonceur en rouge, le chasseur en bleu et la tourelle en verte.</span>
-                </p>
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;" data-i18n="projects.roguelite.enemiesTitle"></h3>
+                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 2rem;" data-i18n="projects.roguelite.enemiesIntro"></p>
 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
                     <img src="assets/images/projects/rogue-lite/imagefonceur.png" alt="Fonceur" style="width: 100%; border-radius: 0.4rem;">
@@ -1104,87 +1076,71 @@
                 </div>
 
                 <div style="margin-bottom: 2rem;">
-                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-rusher-title">Fonceur</span></h4>
-                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-                        <span class="text-rusher-desc">Le fonceur te charge directement pour exploser contre toi et t'infliger de lourds dégâts.</span>
-                    </p>
+                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;" data-i18n="projects.roguelite.rusherTitle"></h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;" data-i18n="projects.roguelite.rusherDesc"></p>
                     <video src="assets/images/projects/rogue-lite/fonceur.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;"></video>
                 </div>
 
                 <div style="margin-bottom: 2rem;">
-                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-hunter-title">Chasseur</span></h4>
-                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-                        <span class="text-hunter-desc">Le chasseur se déplace et tire de temps en temps pour vous attaquer.</span>
-                    </p>
+                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;" data-i18n="projects.roguelite.hunterTitle"></h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;" data-i18n="projects.roguelite.hunterDesc"></p>
                     <video src="assets/images/projects/rogue-lite/chasseur.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;"></video>
                 </div>
 
                 <div style="margin-bottom: 2rem;">
-                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-turret-title">Tourelle</span></h4>
-                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-                        <span class="text-turret-desc">La tourelle reste immobile et tire continuellement sur le joueur.</span>
-                    </p>
+                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;" data-i18n="projects.roguelite.turretTitle"></h4>
+                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;" data-i18n="projects.roguelite.turretDesc"></p>
                     <video src="assets/images/projects/rogue-lite/tourelle.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;"></video>
                 </div>
 
                 <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
 
-                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;"><span class="text-boss-fight-title">Le Boss</span></h3>
-                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 2rem;">
-                    <span class="text-boss-fight-intro">Le boss possède deux phases, chacune avec deux attaques différentes.</span>
-                </p>
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;" data-i18n="projects.roguelite.bossFightTitle"></h3>
+                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 2rem;" data-i18n="projects.roguelite.bossFightIntro"></p>
 
                 <div style="margin-bottom: 2rem;">
-                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-phase-1-title">Phase 1</span></h4>
+                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;" data-i18n="projects.roguelite.phase1Title"></h4>
                     
                     <div style="margin-bottom: 1.5rem;">
-                        <h5 style="color: var(--primary); margin-bottom: 0.8rem; font-size: 1.1rem;"><span class="text-attack-1-title">Attaque 1 : Balles rebondissantes</span></h5>
-                        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-                            <span class="text-attack-1-desc">Le boss envoie des balles qui rebondissent une seule fois sur les murs.</span>
-                        </p>
+                        <h5 style="color: var(--primary); margin-bottom: 0.8rem; font-size: 1.1rem;" data-i18n="projects.roguelite.attack1Title"></h5>
+                        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;" data-i18n="projects.roguelite.attack1Desc"></p>
                         <video src="assets/images/projects/rogue-lite/attack1.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;"></video>
                     </div>
 
                     <div style="margin-bottom: 1.5rem;">
-                        <h5 style="color: var(--primary); margin-bottom: 0.8rem; font-size: 1.1rem;"><span class="text-attack-2-title">Attaque 2 : Balles divisibles à l'impact</span></h5>
-                        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-                            <span class="text-attack-2-desc">Le boss lance des balles qui se divisent en plusieurs petites balles.</span>
-                        </p>
+                        <h5 style="color: var(--primary); margin-bottom: 0.8rem; font-size: 1.1rem;" data-i18n="projects.roguelite.attack2Title"></h5>
+                        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;" data-i18n="projects.roguelite.attack2Desc"></p>
                         <video src="assets/images/projects/rogue-lite/attack2.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;"></video>
                     </div>
                 </div>
 
                 <div style="margin-bottom: 2rem;">
-                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;"><span class="text-phase-2-title">Phase 2</span></h4>
+                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;" data-i18n="projects.roguelite.phase2Title"></h4>
                     
                     <div style="margin-bottom: 1.5rem;">
-                        <h5 style="color: var(--primary); margin-bottom: 0.8rem; font-size: 1.1rem;"><span class="text-attack-3-title">Attaque 3 : Laser Rotatif</span></h5>
-                        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-                            <span class="text-attack-3-desc">Le boss tire un énorme laser qui pivote à 180 degrés.</span>
-                        </p>
+                        <h5 style="color: var(--primary); margin-bottom: 0.8rem; font-size: 1.1rem;" data-i18n="projects.roguelite.attack3Title"></h5>
+                        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;" data-i18n="projects.roguelite.attack3Desc"></p>
                         <video src="assets/images/projects/rogue-lite/attack3.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;"></video>
                     </div>
 
                     <div style="margin-bottom: 1.5rem;">
-                        <h5 style="color: var(--primary); margin-bottom: 0.8rem; font-size: 1.1rem;"><span class="text-attack-4-title">Attaque 4 : Balles Divisibles sur la durée</span></h5>
-                        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-                            <span class="text-attack-4-desc">Le boss lance des balles qui se divisent toutes les deux secondes.</span>
-                        </p>
+                        <h5 style="color: var(--primary); margin-bottom: 0.8rem; font-size: 1.1rem;" data-i18n="projects.roguelite.attack4Title"></h5>
+                        <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;" data-i18n="projects.roguelite.attack4Desc"></p>
                         <video src="assets/images/projects/rogue-lite/attack4.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 1.5rem;"></video>
                     </div>
                 </div>
 
-                <h3 style="color: var(--primary); margin-top: 2rem; margin-bottom: 1rem;"><span class="text-technologies-used">Technologies Utilisées</span></h3>
+                <h3 style="color: var(--primary); margin-top: 2rem; margin-bottom: 1rem;" data-i18n="common.technologies"></h3>
                 <div class="project-tags" style="margin-bottom: 2rem;">
-                    <span class="tag"><span class="text-tag-ue5">Unreal Engine 5</span></span>
-                    <span class="tag"><span class="text-tag-blueprint">Blueprint</span></span>
-                    <span class="tag"><span class="text-tag-gameplay">Gameplay</span></span>
-                    <span class="tag"><span class="text-tag-ai">IA</span></span>
-                    <span class="tag"><span class="text-tag-procedural">Génération Procédurale</span></span>
+                    <span class="tag" data-i18n="tags.ue5"></span>
+                    <span class="tag" data-i18n="tags.blueprint"></span>
+                    <span class="tag" data-i18n="tags.gameplay"></span>
+                    <span class="tag" data-i18n="tags.ai"></span>
+                    <span class="tag" data-i18n="tags.procedural"></span>
                 </div>
-                <h3 style="color: var(--primary); margin-bottom: 1rem;"><span class="text-links">Liens</span></h3>
+                <h3 style="color: var(--primary); margin-bottom: 1rem;" data-i18n="common.links"></h3>
                 <div class="project-links">
-                    <a href="https://github.com/Cookiecrafty/RogueLiteProject" target="_blank"><span class="text-github">GitHub</span></a>
+                    <a href="https://github.com/Cookiecrafty/RogueLiteProject" target="_blank" data-i18n="common.github"></a>
                 </div>            
             </div>
         </div>
@@ -1194,8 +1150,8 @@
 <!-- Project 2 Detail Page -->
 <div id="page-project2" class="page">
     <section class="container page-section">
-        <button class="btn btn-secondary" onclick="navigateTo('projects')" style="margin-bottom: 2rem;">← <span class="text-back-to-projects">Retour aux Projets</span></button>
-        <h2><span class="text-importtool-title">ImportTool</span></h2>
+        <button class="btn btn-secondary" onclick="navigateTo('projects')" style="margin-bottom: 2rem;"><span data-i18n="projects.back"></span></button>
+        <h2><span data-i18n="projects.importtool.title"></span></h2>
         <div style="max-width: 900px; margin: 0 auto;">
             <div class="project-image" style="height: 400px; margin-bottom: 2rem; border-radius: 0.6rem;">
                 <img src="assets/images/projects/importtool/importtoolthumbnail.png" alt="ImportTool" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.6rem;">
@@ -1203,30 +1159,28 @@
             
             <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 0.6rem; padding: 2rem;">
                 <!-- Introduction -->
-                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;"><span class="text-intro-title">Introduction</span></h3>
-                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 2rem;">
-                    <span class="text-importtool-intro">Ce plugin d'import permet de renommer automatiquement les assets qui sont importés dans Unreal Engine avec une limite de polygone pour éviter de charger des assets trop volumineux. Il a été réalisé en 1 mois au début de ma troisième année à l'école Studio Mercier pour être utilisé pour le projet de 3ème année sur lequel je travaille actuellement.</span>
-                </p>
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;" data-i18n="common.intro"></h3>
+                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 2rem;" data-i18n="projects.importtool.intro"></p>
 
                 <!-- Import success -->
-                <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.5rem;"><span class="text-import-success-title">Import réussi</span></h3>
+                <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.5rem;" data-i18n="projects.importtool.importSuccessTitle"></h3>
                 <video src="assets/images/projects/importtool/importsuccess.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 2rem;"></video>
 
                 <!-- Import failed -->
-                <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.5rem;"><span class="text-import-failed-title">Import échoué</span></h3>
+                <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.5rem;" data-i18n="projects.importtool.importFailedTitle"></h3>
                 <video src="assets/images/projects/importtool/importfailed.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 2rem;"></video>
 
                 <!-- Technologies et liens -->
-                <h3 style="color: var(--primary); margin-top: 2rem; margin-bottom: 1rem;"><span class="text-technologies-used">Technologies Utilisées</span></h3>
+                <h3 style="color: var(--primary); margin-top: 2rem; margin-bottom: 1rem;" data-i18n="common.technologies"></h3>
                 <div class="project-tags" style="margin-bottom: 2rem;">
-                    <span class="tag"><span class="text-tag-ue5">Unreal Engine 5</span></span>
-                    <span class="tag"><span class="text-tag-cpp">C++</span></span>
-                    <span class="tag"><span class="text-tag-pipeline">Pipeline</span></span>
-                    <span class="tag"><span class="text-tag-tool">Tool</span></span>
+                    <span class="tag" data-i18n="tags.ue5"></span>
+                    <span class="tag" data-i18n="tags.cpp"></span>
+                    <span class="tag" data-i18n="tags.pipeline"></span>
+                    <span class="tag" data-i18n="tags.tool"></span>
                 </div>
-                <h3 style="color: var(--primary); margin-bottom: 1rem;"><span class="text-links">Liens</span></h3>
+                <h3 style="color: var(--primary); margin-bottom: 1rem;" data-i18n="common.links"></h3>
                 <div class="project-links">
-                    <a href="https://github.com/Cookiecrafty/ImportTool" target="_blank"><span class="text-github">GitHub</span></a>
+                    <a href="https://github.com/Cookiecrafty/ImportTool" target="_blank" data-i18n="common.github"></a>
                 </div>
             </div>
         </div>
@@ -1237,9 +1191,9 @@
 <div id="page-project3" class="page">
     <section class="container page-section">
         <button class="btn btn-secondary" onclick="navigateTo('projects')" style="margin-bottom: 2rem;">
-            ← <span class="text-back-to-projects">Retour aux Projets</span>
+            <span data-i18n="projects.back"></span>
         </button>
-        <h2><span class="text-twoagainsttime-title">TwoAgainstTime</span></h2>
+        <h2><span data-i18n="projects.twoagainsttime.title"></span></h2>
         <div style="max-width: 900px; margin: 0 auto;">
             <!-- Image en haut -->
             <div class="project-image" style="height: 400px; margin-bottom: 2rem; border-radius: 0.6rem; line-height: 0;">
@@ -1250,23 +1204,21 @@
 
             <!-- Contenu en un seul bloc -->
             <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 0.6rem; padding: 2rem;">
-                <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.5rem;"><span class="text-intro-title">Introduction</span></h3>
-                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-                    <span class="text-twoagainsttime-intro">Jeu multijoueur coop en ligne avec chat vocal de proximité. Ce projet intègre des systèmes avancés de networking pour la synchronisation en temps réel et une implémentation complète du voice chat spatial pour une immersion maximale.</span>
-                </p>
+                <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.5rem;" data-i18n="common.intro"></h3>
+                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;" data-i18n="projects.twoagainsttime.intro"></p>
                 
-                <h3 style="color: var(--primary); margin-top: 2rem; margin-bottom: 1rem;"><span class="text-technologies-used">Technologies Utilisées</span></h3>
+                <h3 style="color: var(--primary); margin-top: 2rem; margin-bottom: 1rem;" data-i18n="common.technologies"></h3>
                 <div class="project-tags" style="margin-bottom: 2rem;">
-                    <span class="tag"><span class="text-tag-ue5">Unreal Engine 5</span></span>
-                    <span class="tag"><span class="text-tag-blueprint">Blueprint</span></span>
-                    <span class="tag"><span class="text-tag-cpp">C++</span></span>
-                    <span class="tag"><span class="text-tag-voicechat">Voice Chat</span></span>
-                    <span class="tag"><span class="text-tag-multiplayer">Multiplayer Online</span></span>
+                    <span class="tag" data-i18n="tags.ue5"></span>
+                    <span class="tag" data-i18n="tags.blueprint"></span>
+                    <span class="tag" data-i18n="tags.cpp"></span>
+                    <span class="tag" data-i18n="tags.voicechat"></span>
+                    <span class="tag" data-i18n="tags.multiplayer"></span>
                 </div>
                 
-                <h3 style="color: var(--primary); margin-bottom: 1rem;"><span class="text-links">Liens</span></h3>
+                <h3 style="color: var(--primary); margin-bottom: 1rem;" data-i18n="common.links"></h3>
                 <div class="project-links">
-                    <a href="https://github.com/Cookiecrafty/CoopASG2" target="_blank"><span class="text-github">GitHub</span></a>
+                    <a href="https://github.com/Cookiecrafty/CoopASG2" target="_blank" data-i18n="common.github"></a>
                 </div>
             </div>
         </div>
@@ -1277,9 +1229,9 @@
 <div id="page-project4" class="page">
     <section class="container page-section">
         <button class="btn btn-secondary" onclick="navigateTo('projects')" style="margin-bottom: 2rem;">
-            ← <span class="text-back-to-projects">Retour aux Projets</span>
+            <span data-i18n="projects.back"></span>
         </button>
-        <h2><span class="text-marvelrivals-title">ReproMarvelRivals</span></h2>
+        <h2><span data-i18n="projects.marvelrivals.title"></span></h2>
         <div style="max-width: 900px; margin: 0 auto;">
             <!-- Image en haut -->
             <div class="project-image" style="height: 400px; margin-bottom: 2rem; border-radius: 0.6rem; line-height: 0;">
@@ -1290,55 +1242,53 @@
 
             <!-- Contenu principal -->
             <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 0.6rem; padding: 2rem;">
-                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;"><span class="text-intro-title">Introduction</span></h3>
-                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 2rem;">
-                    <span class="text-marvelrivals-intro">Reproduction du personnage Overlord de Marvel Rivals en Unreal Engine 5. Focus sur les mécaniques spécifiques : Shoot, Dash, Jet-Pack, Auto-Aim et Ultimate. Projet technique démontrant la maîtrise des systèmes de héros complexes.</span>
-                </p>
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;" data-i18n="common.intro"></h3>
+                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 2rem;" data-i18n="projects.marvelrivals.intro"></p>
 
                 <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
 
                 <!-- Vidéo 1: Shoot -->
                 <div style="margin-bottom: 3rem;">
-                    <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.3rem;"><span class="text-shoot-title">Shoot</span></h3>
+                    <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.3rem;" data-i18n="projects.marvelrivals.shootTitle"></h3>
                     <video src="assets/images/projects/repro-marvel-rivals/shoot.mp4" controls style="width: 100%; border-radius: 0.4rem;"></video>
                 </div>
 
                 <!-- Vidéo 2: Dash -->
                 <div style="margin-bottom: 3rem;">
-                    <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.3rem;"><span class="text-dash-title">Dash</span></h3>
+                    <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.3rem;" data-i18n="projects.marvelrivals.dashTitle"></h3>
                     <video src="assets/images/projects/repro-marvel-rivals/dash.mp4" controls style="width: 100%; border-radius: 0.4rem;"></video>
                 </div>
 
                 <!-- Vidéo 3: Jet-Pack -->
                 <div style="margin-bottom: 3rem;">
-                    <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.3rem;"><span class="text-jetpack-title">Jet-Pack</span></h3>
+                    <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.3rem;" data-i18n="projects.marvelrivals.jetpackTitle"></h3>
                     <video src="assets/images/projects/repro-marvel-rivals/jetpack.mp4" controls style="width: 100%; border-radius: 0.4rem;"></video>
                 </div>
 
                 <!-- Vidéo 4: Auto-Aim -->
                 <div style="margin-bottom: 3rem;">
-                    <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.3rem;"><span class="text-autoaim-title">Auto-Aim</span></h3>
+                    <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.3rem;" data-i18n="projects.marvelrivals.autoaimTitle"></h3>
                     <video src="assets/images/projects/repro-marvel-rivals/autoaim.mp4" controls style="width: 100%; border-radius: 0.4rem;"></video>
                 </div>
 
                 <!-- Vidéo 5: Ultimate -->
                 <div style="margin-bottom: 3rem;">
-                    <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.3rem;"><span class="text-ultimate-title">Ultimate</span></h3>
+                    <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.3rem;" data-i18n="projects.marvelrivals.ultimateTitle"></h3>
                     <video src="assets/images/projects/repro-marvel-rivals/ultimate.mp4" controls style="width: 100%; border-radius: 0.4rem;"></video>
                 </div>
 
                 <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
 
-                <h3 style="color: var(--primary); margin-top: 2rem; margin-bottom: 1rem;"><span class="text-technologies-used">Technologies Utilisées</span></h3>
+                <h3 style="color: var(--primary); margin-top: 2rem; margin-bottom: 1rem;" data-i18n="common.technologies"></h3>
                 <div class="project-tags" style="margin-bottom: 2rem;">
-                    <span class="tag"><span class="text-tag-ue5">Unreal Engine 5</span></span>
-                    <span class="tag"><span class="text-tag-blueprint">Blueprint</span></span>
-                    <span class="tag"><span class="text-tag-gameplay">Gameplay</span></span>
+                    <span class="tag" data-i18n="tags.ue5"></span>
+                    <span class="tag" data-i18n="tags.blueprint"></span>
+                    <span class="tag" data-i18n="tags.gameplay"></span>
                 </div>
 
-                <h3 style="color: var(--primary); margin-bottom: 1rem;"><span class="text-links">Liens</span></h3>
+                <h3 style="color: var(--primary); margin-bottom: 1rem;" data-i18n="common.links"></h3>
                 <div class="project-links">
-                    <a href="https://github.com/RxTeK/RivalsProjetChara" target="_blank"><span class="text-github">GitHub</span></a>
+                    <a href="https://github.com/RxTeK/RivalsProjetChara" target="_blank" data-i18n="common.github"></a>
                 </div>
             </div>
         </div>
