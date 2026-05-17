@@ -220,7 +220,8 @@
       "pipeline": "Pipeline",
       "tool": "Tool",
       "voicechat": "Voice Chat",
-      "multiplayer": "Multiplayer Online"
+      "multiplayer": "Multiplayer Online",
+      "poolingobject": "Pooling Object"
     },
     "contact": {
       "title": "Me Contacter",
@@ -471,7 +472,8 @@
       "pipeline": "Pipeline",
       "tool": "Tool",
       "voicechat": "Voice Chat",
-      "multiplayer": "Multiplayer Online"
+      "multiplayer": "Multiplayer Online",
+      "poolingobject": "Pooling Object"
     },
     "contact": {
       "title": "Contact Me",
