@@ -206,6 +206,7 @@
 
         "objectPoolingTitle": "Le Pooling Object",
         "objectPoolingDesc": "Le système d'object pooling a été mis en place pour optimiser les performances pendant les vagues, en réutilisant les ennemis et les projectiles plutôt qu'en les recréant en boucle. Cela permet d'éviter de surcharger la mémoire de l'ordinateur."
+      }
     },
     "tags": {
       "ue5": "Unreal Engine 5",
@@ -453,7 +454,7 @@
 
         "objectPoolingTitle": "Object Pooling",
         "objectPoolingDesc": "The object pooling system was implemented to optimize performance during waves by reusing enemies and projectiles instead of constantly recreating them. This helps avoid excessive memory usage and keeps the game running more smoothly."
-      
+      }
     },
     "tags": {
       "ue5": "Unreal Engine 5",
@@ -494,4 +495,4 @@
       "github": "GitHub"
     }
   }
-}}}
+}
