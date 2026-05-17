@@ -856,7 +856,7 @@
                     <div class="cv-header">
                         <div>
                             <h3 data-i18n="gameJams.ggj">Global Game Jam</h3>
-                            <p class="cv-description" data-i18n="gameJams.ggj_years">2024, 2025</p>
+                            <p class="cv-description" data-i18n="gameJams.ggj_years">2024, 2025, 2026</p>
                         </div>
                     </div>
                 </div>
@@ -875,6 +875,15 @@
                         <div>
                             <h3 data-i18n="gameJams.gmtkgj">GMTK Game Jam</h3>
                             <p class="cv-description" data-i18n="gameJams.gmtkgj_years">2025</p>
+                        </div>
+                    </div>
+                </div>
+
+		<div class="cv-item">
+                    <div class="cv-header">
+                        <div>
+                            <h3 data-i18n="gameJams.smgj">Baudo Game Jam</h3>
+                            <p class="cv-description" data-i18n="gameJams.bgj_years">Winter Edition 2026</p>
                         </div>
                     </div>
                 </div>
@@ -964,6 +973,25 @@
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/RxTeK/RivalsProjetChara" target="_blank" onclick="event.stopPropagation()" data-i18n="common.github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-card" onclick="navigateTo('project5')">
+                    <div class="project-image" style="line-height: 0; padding: 0;">
+                        <img src="assets/images/projects/martiandownpour/martiandownpourthumbnail.png" alt="MartianDownpour" style="width: 100%; height: 100%; object-fit: cover; display: block; line-height: 0; margin: 0;">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="projects.martiandownpour.title">MartianDownpour</h3>
+                        <p data-i18n="projects.martiandownpour.description">Jeu solo réalisé en game jam en 1 semaine avec un système de pooling object</p>
+                        <div class="project-tags">
+                            <span class="tag" data-i18n="tags.ue5">Unreal Engine 5</span>
+                            <span class="tag" data-i18n="tags.blueprint">Blueprint</span>
+                            <span class="tag" data-i18n="tags.gameplay">Gameplay</span>
+			    <span class="tag" data-i18n="tags.gameplay">Pooling Object</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://cookiecraft.itch.io/martiandownpour" target="_blank" onclick="event.stopPropagation()" data-i18n="common.github">Itchio</a>
                         </div>
                     </div>
                 </div>
@@ -1328,6 +1356,134 @@
                 <h3 style="color: var(--primary); margin-bottom: 1rem;" data-i18n="common.links"></h3>
                 <div class="project-links">
                     <a href="https://github.com/RxTeK/RivalsProjetChara" target="_blank" data-i18n="common.github"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Project 5 Detail Page -->
+<div id="page-project5" class="page">
+    <section class="container page-section">
+        <button class="btn btn-secondary" onclick="navigateTo('projects')" style="margin-bottom: 2rem;">
+            <span data-i18n="projects.back"></span>
+        </button>
+
+        <h2><span data-i18n="projects.martiandownpour.title"></span></h2>
+
+        <div style="max-width: 900px; margin: 0 auto;">
+            <!-- Image en haut -->
+            <div class="project-image" style="height: 400px; margin-bottom: 2rem; border-radius: 0.6rem; line-height: 0;">
+                <img src="assets/images/projects/martiandownpour/martiandownpourbackground.png"
+                     alt="Martian Downpour"
+                     style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.6rem; display: block; line-height: 0;">
+            </div>
+
+            <!-- Contenu principal -->
+            <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 0.6rem; padding: 2rem;">
+                <!-- Introduction -->
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;" data-i18n="common.intro"></h3>
+                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 2rem;" data-i18n="projects.martiandownpour.intro"></p>
+
+                <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
+
+                <!-- Joueur -->
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;" data-i18n="projects.martiandownpour.playerTitle"></h3>
+
+                <div style="margin-bottom: 2.5rem;">
+                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;" data-i18n="projects.martiandownpour.dashTitle"></h4>
+                    <video src="assets/images/projects/martiandownpour/dash.mp4" controls style="width: 100%; border-radius: 0.4rem;"></video>
+                </div>
+
+                <div style="margin-bottom: 2.5rem;">
+                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;" data-i18n="projects.martiandownpour.meleeAttackTitle"></h4>
+                    <video src="assets/images/projects/martiandownpour/meleeattack.mp4" controls style="width: 100%; border-radius: 0.4rem;"></video>
+                </div>
+
+                <div style="margin-bottom: 2.5rem;">
+                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;" data-i18n="projects.martiandownpour.rangedAttackTitle"></h4>
+                    <video src="assets/images/projects/martiandownpour/rangedattack.mp4" controls style="width: 100%; border-radius: 0.4rem;"></video>
+                </div>
+
+                <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
+
+                <!-- Ennemis -->
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;" data-i18n="projects.martiandownpour.enemiesTitle"></h3>
+
+                <div style="margin-bottom: 2.5rem;">
+                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;" data-i18n="projects.martiandownpour.basicAlienTitle"></h4>
+                    <video src="assets/images/projects/martiandownpour/basicalien.mp4" controls style="width: 100%; border-radius: 0.4rem;"></video>
+                </div>
+
+                <div style="margin-bottom: 2.5rem;">
+                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;" data-i18n="projects.martiandownpour.explosiveAlienTitle"></h4>
+                    <video src="assets/images/projects/martiandownpour/explosivealien.mp4" controls style="width: 100%; border-radius: 0.4rem;"></video>
+                </div>
+
+                <div style="margin-bottom: 2.5rem;">
+                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;" data-i18n="projects.martiandownpour.ufoAlienTitle"></h4>
+                    <video src="assets/images/projects/martiandownpour/ufoalien.mp4" controls style="width: 100%; border-radius: 0.4rem;"></video>
+                </div>
+
+                <div style="margin-bottom: 2.5rem;">
+                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;" data-i18n="projects.martiandownpour.tankAlienTitle"></h4>
+                    <video src="assets/images/projects/martiandownpour/tankalien.mp4" controls style="width: 100%; border-radius: 0.4rem;"></video>
+                </div>
+
+                <div style="margin-bottom: 2.5rem;">
+                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;" data-i18n="projects.martiandownpour.dashAlienTitle"></h4>
+                    <video src="assets/images/projects/martiandownpour/dashalien.mp4" controls style="width: 100%; border-radius: 0.4rem;"></video>
+                </div>
+
+                <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
+
+                <!-- Système météo -->
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;" data-i18n="projects.martiandownpour.weatherSystemTitle"></h3>
+
+                <div style="margin-bottom: 2.5rem;">
+                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;" data-i18n="projects.martiandownpour.floodTitle"></h4>
+                    <video src="assets/images/projects/martiandownpour/flood.mp4" controls style="width: 100%; border-radius: 0.4rem;"></video>
+                </div>
+
+                <div style="margin-bottom: 2.5rem;">
+                    <h4 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;" data-i18n="projects.martiandownpour.fogStormTitle"></h4>
+                    <video src="assets/images/projects/martiandownpour/fogstorm.mp4" controls style="width: 100%; border-radius: 0.4rem;"></video>
+                </div>
+
+                <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
+
+                <!-- Système de vague -->
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;" data-i18n="projects.martiandownpour.waveSystemTitle"></h3>
+                <img src="assets/images/projects/martiandownpour/wavesystem.png"
+                     alt="Wave System"
+                     style="width: 100%; border-radius: 0.4rem; margin-bottom: 2rem;">
+
+                <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
+
+                <!-- Magasin -->
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;" data-i18n="projects.martiandownpour.shopTitle"></h3>
+                <video src="assets/images/projects/martiandownpour/shop.mp4" controls style="width: 100%; border-radius: 0.4rem; margin-bottom: 2rem;"></video>
+
+                <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
+
+                <!-- Pooling Object -->
+                <h3 style="color: var(--primary); margin-bottom: 1.5rem; font-size: 1.5rem;" data-i18n="projects.martiandownpour.objectPoolingTitle"></h3>
+                <img src="assets/images/projects/martiandownpour/objectpooling.png"
+                     alt="Object Pooling"
+                     style="width: 100%; border-radius: 0.4rem; margin-bottom: 2rem;">
+
+                <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
+
+                <h3 style="color: var(--primary); margin-top: 2rem; margin-bottom: 1rem;" data-i18n="common.technologies"></h3>
+                <div class="project-tags" style="margin-bottom: 2rem;">
+                    <span class="tag" data-i18n="tags.ue5"></span>
+                    <span class="tag" data-i18n="tags.blueprint"></span>
+                    <span class="tag" data-i18n="tags.gameplay"></span>
+                </div>
+
+                <h3 style="color: var(--primary); margin-bottom: 1rem;" data-i18n="common.links"></h3>
+                <div class="project-links">
+                    <a href="https://cookiecraft.itch.io/martiandownpour" target="_blank" data-i18n="common.itchio">itch.io</a>
                 </div>
             </div>
         </div>
