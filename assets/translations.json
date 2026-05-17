@@ -155,6 +155,27 @@
         "jetpackTitle": "Jet-Pack",
         "autoaimTitle": "Auto-Aim",
         "ultimateTitle": "Ultimate"
+      },
+      "martiandownpour": {
+        "title": "MartianDownpour",
+        "description": "Jeu solo réalisé en game jam en 1 semaine avec un système de pooling object",
+        "intro": "Jeu solo de combat de vague développé en équipe de 5 personnes ( 2 Concept Artists, 1 Game Artist, 1 Musicien et 1 Game Developer). ",
+        "playerTitle": "Le joueur",
+        "dashTitle": "Dash",
+        "meleeAttackTitle": "Attaque de mélée",
+        "rangedAttackTitle": "Attaque à distance",
+        "enemiesTitle": "Les Ennemis",
+        "basicAlienTitle": "L'Alien basique",
+        "explosiveAlienTitle": "L'Alien Explosif",
+        "ufoAlienTitle": "L'Alien OVNI",
+        "tankAlienTitle": "L'Alien Tank",
+        "dashAlienTitle": "L'Alien Dasher",
+        "weatherSystemTitle": "Système météo",
+        "floodTitle": "Inondation",
+        "fogStormTitle": "Tempête brumeuse",
+        "waveSystemTitle": "Système de vague",
+        "shopTitle": "Magasin",
+        "objectPoolingTitle": "Le Pooling Object"
       }
     },
     "tags": {
