@@ -160,23 +160,52 @@
         "title": "MartianDownpour",
         "description": "Jeu solo réalisé en game jam en 1 semaine avec un système de pooling object",
         "intro": "Jeu solo de combat de vague développé en équipe de 5 personnes ( 2 Concept Artists, 1 Game Artist, 1 Musicien et 1 Game Developer). ",
+
         "playerTitle": "Le joueur",
         "dashTitle": "Dash",
+        "dashDesc": "Le dash permet au joueur de traverser les ennemis et de se déplacer rapidement vers un point donné.",
+
         "meleeAttackTitle": "Attaque de mélée",
+        "meleeAttackDesc": "L'attaque de mélée est composée de 4 attaques sous forme de combo, la première attaque étant la plus faible, et la dernière la plus puissante.",
+
         "rangedAttackTitle": "Attaque à distance",
+        "rangedAttackDesc": "L'attaque à distance permet d'attaquer les ennemis à distance lorsque le danger est trop élevé lors des dernières vagues où il y a énormément d'ennemis rassemblé en un même point.",
+
         "enemiesTitle": "Les Ennemis",
+        "enemiesDesc": "Pour optimiser le jeu, tout les ennemis fonctionnent sans behavior tree ou state tree étant donné qu'ils ne font que chasser et attaquer le joueur",
+
         "basicAlienTitle": "L'Alien basique",
+        "basicAlienDesc": "L'Alien basique est l'ennemi standard qui attaque simplement au corps à corps",
+
         "explosiveAlienTitle": "L'Alien Explosif",
+        "explosiveAlienDesc": "L'Alien Explosif explose lorsqu'il est proche du joueur et fait aussi des dégâts aux autres ennemis",
+
         "ufoAlienTitle": "L'Alien OVNI",
+        "ufoAlienDesc": "L'Alien OVNI attaque à distance tant que le joueur est dans son champ de vision et s'approche dès qu'il le perd de vue",
+
         "tankAlienTitle": "L'Alien Tank",
+        "tankAlienDesc": "L'Alien Tank saute sur le joueur et fait de lourd dégâts de zone impactant les autres ennemis au passage",
+
         "dashAlienTitle": "L'Alien Dasher",
+        "dashAlienDesc": "L'Alien Dasher attaque en ligne droite éjectant tout ceux qui se trouvent sur son chemin",
+
         "weatherSystemTitle": "Système météo",
+        "weatherSystemDesc": "Le système de météo influe sur les vagues en impactant tout l'environnement.",
+
         "floodTitle": "Inondation",
+        "floodDesc": "La zone de jeu devient de plus en plus innondée au fur et à mesure du temps, infligeant des dégâts si l'on est sous l'eau",
+
         "fogStormTitle": "Tempête brumeuse",
+        "fogStormDesc": "La tempête brumeuse réduit la lisibilité de l'environnement et active la foudre pouvant impacter le joueur et les ennemis.",
+
         "waveSystemTitle": "Système de vague",
+        "waveSystemDesc": "Chaque vague de nouveaux ennemis apparaissent et la difficultée augmente, les ennemis deviennent plus fort et plus résistant à chaque vague.",
+
         "shopTitle": "Magasin",
-        "objectPoolingTitle": "Le Pooling Object"
-      }
+        "shopDesc": "Le magasin permet au joueur d'améliorer ses statistiques entre deux phases de combat. On peut acheter différentes statistiques à savoir : la vie maximale, le vitesse de déplacement, le cooldown du dash, la distance du dash, la puissance des coups au corps à corps, la portée de nos coups au corps à corps, les dégats des tirs à distance, la percée des balles, la vitesse de descente de surchauffe de l'attaque à distance et la quantité de surchauffe que l'attaque à distance peut supporter.  Chaque statistique ayant plus ou moins de chance d'apparaitre dans le magasin avec un système de rareté en fonction de combien on peut gagner et du prix de ces améliorations. ",
+
+        "objectPoolingTitle": "Le Pooling Object",
+        "objectPoolingDesc": "Le système d'object pooling a été mis en place pour optimiser les performances pendant les vagues, en réutilisant les ennemis et les projectiles plutôt qu'en les recréant en boucle. Cela permet d'éviter de surcharger la mémoire de l'ordinateur."
     },
     "tags": {
       "ue5": "Unreal Engine 5",
@@ -373,6 +402,57 @@
         "jetpackTitle": "Jet-Pack",
         "autoaimTitle": "Auto-Aim",
         "ultimateTitle": "Ultimate"
+      },
+      "martiandownpour": {
+        "title": "MartianDownpour",
+        "description": "Solo game created during a 1-week game jam with an object pooling system",
+        "intro": "Solo wave-based combat game developed by a team of 5 people (2 Concept Artists, 1 Game Artist, 1 Musician, and 1 Game Developer).",
+
+        "playerTitle": "The Player",
+        "dashTitle": "Dash",
+        "dashDesc": "Dash allows the player to move quickly to a given point and pass through enemies.",
+
+        "meleeAttackTitle": "Melee Attack",
+        "meleeAttackDesc": "The melee attack is made up of 4 combo strikes, with the first hit being the weakest and the last one the most powerful.",
+
+        "rangedAttackTitle": "Ranged Attack",
+        "rangedAttackDesc": "The ranged attack allows the player to fight enemies from a distance when the danger becomes too high during the last waves, when many enemies are gathered in the same area.",
+
+        "enemiesTitle": "Enemies",
+        "enemiesDesc": "To optimize the game, all enemies work without a behavior tree or state tree, since they only need to chase and attack the player.",
+
+        "basicAlienTitle": "Basic Alien",
+        "basicAlienDesc": "The Basic Alien is the standard enemy and only attacks in melee.",
+
+        "explosiveAlienTitle": "Explosive Alien",
+        "explosiveAlienDesc": "The Explosive Alien explodes when it gets close to the player and also damages other enemies.",
+
+        "ufoAlienTitle": "UFO Alien",
+        "ufoAlienDesc": "The UFO Alien attacks from range as long as the player stays within its line of sight, and moves closer once it loses sight of them.",
+
+        "tankAlienTitle": "Tank Alien",
+        "tankAlienDesc": "The Tank Alien jumps onto the player and deals heavy area damage, affecting other enemies in the process.",
+
+        "dashAlienTitle": "Dasher Alien",
+        "dashAlienDesc": "The Dasher Alien charges in a straight line, knocking back everything in its path.",
+
+        "weatherSystemTitle": "Weather System",
+        "weatherSystemDesc": "The weather system affects the waves by changing the entire environment.",
+
+        "floodTitle": "Flood",
+        "floodDesc": "The play area gradually becomes flooded over time, dealing damage if the player stays underwater.",
+
+        "fogStormTitle": "Fog Storm",
+        "fogStormDesc": "The fog storm reduces environmental visibility and enables lightning that can affect both the player and enemies.",
+
+        "waveSystemTitle": "Wave System",
+        "waveSystemDesc": "Each wave spawns new enemies, and the difficulty increases as enemies become stronger and more resistant over time.",
+
+        "shopTitle": "Shop",
+        "shopDesc": "The shop allows the player to improve their stats between combat phases. It offers different upgrades such as maximum health, movement speed, dash cooldown, dash distance, melee damage, melee range, ranged damage, bullet penetration, ranged overheating recovery speed, and the amount of heat the ranged attack can sustain. Each stat has a different chance of appearing in the shop thanks to a rarity system based on how much it can improve the player and how much it costs.",
+
+        "objectPoolingTitle": "Object Pooling",
+        "objectPoolingDesc": "The object pooling system was implemented to optimize performance during waves by reusing enemies and projectiles instead of constantly recreating them. This helps avoid excessive memory usage and keeps the game running more smoothly."
       }
     },
     "tags": {
@@ -414,4 +494,4 @@
       "github": "GitHub"
     }
   }
-}
+}}
