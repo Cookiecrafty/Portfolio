@@ -64,11 +64,12 @@
     "gameJams": {
       "title": "Game Jam",
       "ggj": "Global Game Jam",
-      "ggj_years": "2024, 2025",
+      "ggj_years": "2024, 2025, 2026",
       "smgj": "Studio M Game Jam",
       "smgj_years": "2024, 2025",
       "gmtkgj": "GMTK Game Jam",
-      "gmtkgj_years": "2025"
+      "gmtkgj_years": "2025",
+      "gameJams.bgj_years" : "Baudo Game Jam 2025"
     },
     "projects": {
       "title": "Mes Projets",
@@ -244,7 +245,8 @@
       "intro": "Introduction",
       "technologies": "Technologies Utilisées",
       "links": "Liens",
-      "github": "GitHub"
+      "github": "GitHub",
+      "itchio": "itch.io"
     }
   },
   "en": {
@@ -310,13 +312,14 @@
       "degree2_year": "2023"
     },
     "gameJams": {
-      "title": "Game Jams",
+      "title": "Game Jam",
       "ggj": "Global Game Jam",
-      "ggj_years": "2024, 2025",
+      "ggj_years": "2024, 2025, 2026",
       "smgj": "Studio M Game Jam",
       "smgj_years": "2024, 2025",
       "gmtkgj": "GMTK Game Jam",
-      "gmtkgj_years": "2025"
+      "gmtkgj_years": "2025",
+      "gameJams.bgj_years" : "Baudo Game Jam 2025"
     },
     "projects": {
       "title": "My Projects",
@@ -492,7 +495,8 @@
       "intro": "Introduction",
       "technologies": "Technologies Used",
       "links": "Links",
-      "github": "GitHub"
+      "github": "GitHub",
+      "itchio": "itch.io"
     }
   }
 }
