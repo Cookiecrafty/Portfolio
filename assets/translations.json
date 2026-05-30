@@ -47,7 +47,8 @@
         "tools": "Outils",
         "commonui": "CommonUI",
         "gas": "Gameplay Abilities System",
-        "procedural": "Génération procédurale"
+        "procedural": "Génération procédurale",
+        "VR": "VR"
       }
     },
     "education": {
@@ -299,7 +300,8 @@
         "tools": "Tools",
         "commonui": "CommonUI",
         "gas": "Gameplay Abilities System",
-        "procedural": "Procedural Generation"
+        "procedural": "Procedural Generation",
+        "VR": "VR"
       }
     },
     "education": {
