@@ -69,9 +69,11 @@
       "smgj": "Studio M Game Jam",
       "smgj_years": "2024, 2025",
       "gmtkgj": "GMTK Game Jam",
-      "gmtkgj_years": "2025",
+      "gmtkgj_years": "2025, 2026",
       "bgj": "Baudo Game Jam",
-      "bgj_years" : "Winter Edition 2026"
+      "bgj_years" : "Winter Edition 2026",
+      "tvsjdgj" : "The Very Serious Juniper Dev Game Jam",
+      "tvsjdgj_years" : "2026"
     },
     "projects": {
       "title": "Mes Projets",
@@ -322,9 +324,11 @@
       "smgj": "Studio M Game Jam",
       "smgj_years": "2024, 2025",
       "gmtkgj": "GMTK Game Jam",
-      "gmtkgj_years": "2025",
+      "gmtkgj_years": "2025, 2026",
       "bgj": "Baudo Game Jam",
-      "bgj_years" : "Winter Edition 2026"
+      "bgj_years" : "Winter Edition 2026",
+      "tvsjdgj" : "The Very Serious Juniper Dev Game Jam",
+      "tvsjdgj_years" : "2026"
     },
     "projects": {
       "title": "My Projects",
