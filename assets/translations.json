@@ -73,7 +73,9 @@
       "bgj": "Baudo Game Jam",
       "bgj_years" : "Winter Edition 2026",
       "tvsjdgj" : "The Very Serious Juniper Dev Game Jam",
-      "tvsjdgj_years" : "2026"
+      "tvsjdgj_years" : "2026",
+      "minij": "Mini Jam",
+      "minij_years" : "N°218"
     },
     "projects": {
       "title": "Mes Projets",
@@ -328,7 +330,9 @@
       "bgj": "Baudo Game Jam",
       "bgj_years" : "Winter Edition 2026",
       "tvsjdgj" : "The Very Serious Juniper Dev Game Jam",
-      "tvsjdgj_years" : "2026"
+      "tvsjdgj_years" : "2026",
+      "minij": "Mini Jam",
+      "minij_years" : "N°218"
     },
     "projects": {
       "title": "My Projects",
