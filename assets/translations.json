@@ -62,6 +62,13 @@
       "degree2_spec": "Spécialisation Maths/Physique",
       "degree2_year": "2023"
     },
+    "experience" : {
+      "title" : "Expérience",
+      "hypnesia" : "Stage VR de 2 mois chez Hypnesia",
+      "hypnesia_spec": "Prototype VR en multijoueur cross-platform avec des motions trackers développé en Avril 2026.",
+      "uefn_student_bootcamp" : "UEFN : Student Bootcamp",
+      "uefn_student_bootcamp_spec": "Apprentissage du moteur UEFN et du Verse pour développer un jeu Fortnite en 2 semaines après 1 semaine de cours, dans mon cas un jeu Lego Fortnite."
+    },
     "gameJams": {
       "title": "Game Jam",
       "ggj": "Global Game Jam",
@@ -318,6 +325,13 @@
       "degree2_school": "École Victor Hugo – Colomiers",
       "degree2_spec": "Specialization Math/Physics",
       "degree2_year": "2023"
+    },
+    "experience" : {
+      "title" : "Experience",
+      "hypnesia" : "2-month VR internship at Hypnesia",
+      "hypnesia_spec": "VR prototype in multiplatform\nmultiplayer with motions trackers developed in April 2026.",
+      "uefn_student_bootcamp" : "UEFN : Student Bootcamp",
+      "uefn_student_bootcamp_spec": "Learning the UEFN engine and Verse to develop a Fortnite game in 2 weeks after 1 week of lessons, in my case a Lego Fortnite game."
     },
     "gameJams": {
       "title": "Game Jam",

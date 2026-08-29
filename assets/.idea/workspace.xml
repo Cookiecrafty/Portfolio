@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="832ab23e-3dc8-450d-b46a-4976118f8a2b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/translations.json" beforeDir="false" afterPath="$PROJECT_DIR$/translations.json" afterDir="false" />
-    </list>
+    <list default="true" id="832ab23e-3dc8-450d-b46a-4976118f8a2b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,9 +10,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="3ERkg54ddpPEWMQt25pLZMc4yUY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -26,6 +24,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -38,6 +40,7 @@
       <option name="presentableId" value="Default" />
       <updated>1780148878878</updated>
       <workItem from="1780148880407" duration="60000" />
+      <workItem from="1787894818756" duration="384000" />
     </task>
     <servers />
   </component>
