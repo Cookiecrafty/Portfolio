@@ -242,7 +242,7 @@
     "contact": {
       "title": "Me Contacter",
       "message": "Construisons quelque chose d'incroyable ensemble.",
-      "notice": "N'hésitez pas à me contacter ! Je suis actuellement en 3ème année de Game Developer à l'école Studio Mercier, mais disponible pour de nouvelles opportunités !",
+      "notice": "N'hésitez pas à me contacter ! Je suis actuellement en 4ème année de Game Developer à l'école Studio Mercier, mais disponible pour de nouvelles opportunités !",
       "form": {
         "name": "NOM",
         "name_placeholder": "Votre nom",
@@ -510,7 +510,7 @@
     "contact": {
       "title": "Contact Me",
       "message": "Let's build something amazing together.",
-      "notice": "Don't hesitate to contact me! I'm currently in my 3rd year of Game Developer at Studio Mercier, but available for new opportunities !",
+      "notice": "Don't hesitate to contact me! I'm currently in my 4th year of Game Developer at Studio Mercier, but available for new opportunities !",
       "form": {
         "name": "NAME",
         "name_placeholder": "Your name",
